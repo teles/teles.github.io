@@ -17,7 +17,7 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, icon, text, tags }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
+    <div className="max-w-sm rounded-xl border-gray-200 border overflow-hidden shadow-lg">
       <div className="relative h-48">
         <Image
           src={image.src}
@@ -26,13 +26,13 @@ const Card: React.FC<CardProps> = ({ image, title, icon, text, tags }) => {
           objectFit="cover"
         />
       </div>
-      <div className="py-4">
-        <div className="flex items-center mb-2">
+      <div className="px-6 pt-6 pb-8 border-t border-gray-200">
+        <div className="flex items-center my-2">
           {icon && <div className="mr-2">{icon}</div>}
           <h2 className="font-bold text-xl">{title}</h2>
         </div>
-        <p className="text-gray-700 text-base">{text}</p>
-        <div className="mt-4 flex flex-wrap">
+        <p className="text-gray-600 text-base my-4">{text}</p>
+        <div className="mt-4 flex flex-wrap gap-y-2">
           {tags.map((tag, index) => (
             <Tag key={index} label={tag} />
           ))}

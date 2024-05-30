@@ -33,9 +33,9 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {
   return (
     <div>
       {sections.map((section, sectionIndex) => (
-        <section key={sectionIndex} className="container mx-auto">
+        <section key={sectionIndex} className="container mx-auto mb-12 md:mb-18 p-6 flex flex-col md:flex-row gap-4">
           {section.columns.map((column, columnIndex) => (
-            <div key={columnIndex} className="column">
+            <div key={columnIndex} className="w-full">
               {column.components.map((component, componentIndex) => {
                 const Component = componentMap[component.type]
                 return Component ? (

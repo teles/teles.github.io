@@ -50,6 +50,69 @@
           ]
         }
       ]
+    },
+    {
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "Projects"
+              }
+            }
+          ]
+        }
+      ]      
+    },
+    {
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "/images/teles-min.png",
+                  "width": 616,
+                  "height": 320,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "title": "Personal Website",
+                "text": "My personal website, portfolio, and blog. Built with Next.js, Tailwind CSS, and MDX.",
+                "tags": [
+                  "Next.js",
+                  "Tailwind CSS",
+                  "MDX"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://holy-sheets.github.io/docs/logo.svg",
+                  "width": 616,
+                  "height": 320,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "title": "HolySheets!",
+                "text": "A Google Sheets add-on that helps you manage your spreadsheets with ease.",
+                "tags": [
+                  "TypeScript",
+                  "NPM Library",
+                  "Google Sheets"                  
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

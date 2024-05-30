@@ -29,7 +29,7 @@ export interface HeroProps {
  */
 const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center p-6">
+    <div className="flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <div className="relative h-80 rounded-lg">
           <Image

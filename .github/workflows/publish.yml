@@ -80,12 +80,12 @@ jobs:
       - name: Upload Next.js artifact
         uses: actions/upload-artifact@v4
         with:
-          name: nextjs-artifact-${{ github.run_number }}
+          name: nextjs-artifact
           path: ./out
       - name: Upload Storybook artifact
         uses: actions/upload-artifact@v4
         with:
-          name: storybook-artifact-${{ github.run_number }}
+          name: storybook-artifact
           path: ./storybook        
 
   # Deployment job

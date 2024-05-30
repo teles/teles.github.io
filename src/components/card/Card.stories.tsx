@@ -1,8 +1,7 @@
-// components/stories/Card.stories.tsx
 import React from 'react'
 import { Meta, StoryFn } from '@storybook/react'
 import Card, { CardProps } from '../card/Card'
-import { FaStar } from 'react-icons/fa' // Exemplo de ícone
+import { FaStar } from 'react-icons/fa'
 
 export default {
   title: 'Components/Card',
@@ -13,7 +12,12 @@ const Template: StoryFn<CardProps> = (args) => <Card {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  imageSrc: 'https://via.placeholder.com/600x400',
+  image: {
+    src: 'https://via.placeholder.com/600x400',
+    alt: 'Placeholder Image',
+    width: 600,
+    height: 400,
+  },
   title: 'Card Title',
   icon: <FaStar className="text-yellow-500" />,
   text: 'This is a short description for the card.',

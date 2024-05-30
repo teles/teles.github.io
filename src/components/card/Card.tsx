@@ -1,20 +1,31 @@
-// components/Card.tsx
 import React from 'react'
 import Image from 'next/image'
 import Tag from '../tag/Tag'
 
 export interface CardProps {
-  imageSrc: string;
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  }
   title: string;
   icon?: React.ReactNode;
   text: string;
   tags: string[];
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, icon, text, tags }) => {
+const Card: React.FC<CardProps> = ({ image, title, icon, text, tags }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white p-4">
-      <Image className="w-full h-48 object-cover rounded-md" src={imageSrc} alt={title} />
+      <div className="relative h-48">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="py-4">
         <div className="flex items-center mb-2">
           {icon && <div className="mr-2">{icon}</div>}

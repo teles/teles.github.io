@@ -15,7 +15,13 @@ const Template: StoryFn<HeroProps> = (args) => <Hero {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  imageSrc: 'https://via.placeholder.com/600x400',
+  // imageSrc: 'https://via.placeholder.com/600x400',
+  image: {
+    src: 'https://via.placeholder.com/600x400',
+    alt: 'Placeholder Image',
+    width: 600,
+    height: 400,
+  },
   markdownText: `# Hero Title
 
 This is a paragraph with **bold** text and *italic* text.

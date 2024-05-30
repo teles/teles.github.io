@@ -1,26 +1,55 @@
-[
-  {
-    "columns": [
-      {
-        "components": [
-          {
-            "type": "Hero",
-            "props": {
-              "image": {
-                "src": "/images/teles-min.png",
-                "width": 616,
-                "height": 320,
-                "alt": "Teles' avatar drawn by github.com/teles"
-              },
-              "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
-              "callToAction": {
-                "text": "Connect with me",
-                "link": "https://www.linkedin.com/in/jotateles/"
+{
+  "meta": {
+    "title": "Teles - Creative Software Engineer",
+    "description": "Creative Software Engineer with over 11 years of experience in web development, focused on frontend technologies, and proficient in JavaScript, TypeScript, Node, Python, and more. Dedicated to SEO and UX, and have worked on products reaching millions of users in Brazil and numerous startup founders.",
+    "openGraph": {
+      "title": "Teles - Creative Software Engineer",
+      "description": "Creative Software Engineer with over 11 years of experience in web development, focused on frontend technologies, and proficient in JavaScript, TypeScript, Node, Python, and more. Dedicated to SEO and UX, and have worked on products reaching millions of users in Brazil and numerous startup founders.",
+      "type": "website",
+      "locale": "en_US",
+      "url": "https://teles.dev.br",
+      "site_name": "Teles Portfolio",
+      "images": [
+        {
+          "url": "https://teles.dev.br/og-image.jpg",
+          "width": 1200,
+          "height": 630,
+          "alt": "Teles - Creative Software Engineer"
+        }
+      ]
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@your_twitter_handle",
+      "title": "Teles - Creative Software Engineer",
+      "description": "Creative Software Engineer with over 11 years of experience in web development, focused on frontend technologies, and proficient in JavaScript, TypeScript, Node, Python, and more. Dedicated to SEO and UX, and have worked on products reaching millions of users in Brazil and numerous startup founders.",
+      "image": "https://your-website-url.com/twitter-image.jpg"
+    }
+  },
+  "sections": [
+    {
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "Hero",
+              "props": {
+                "image": {
+                  "src": "/images/teles-min.png",
+                  "width": 616,
+                  "height": 320,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
+                "callToAction": {
+                  "text": "Connect with me",
+                  "link": "https://www.linkedin.com/in/jotateles/"
+                }
               }
             }
-          }
-        ]
-      }
-    ]
-  }
-]
+          ]
+        }
+      ]
+    }
+  ]
+}

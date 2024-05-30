@@ -75,10 +75,16 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Upload artifact
+      - name: Build Storybook
+        run: ${{ steps.detect-package-manager.outputs.runner }} storybook:build -o storybook
+      - name: Upload Next.js artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Upload Storybook artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./storybook        
 
   # Deployment job
   deploy:

@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
 
 export interface HeroProps {
-  // imageSrc: string;
   image: {
     src: string;
     alt: string;
@@ -13,6 +12,17 @@ export interface HeroProps {
   markdownText: string;
 }
 
+/**
+ * Hero component displays an image and markdown text in a flexible layout.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {Object} props.image - The image object containing the source and alt text.
+ * @param {string} props.image.src - The source URL of the image.
+ * @param {string} props.image.alt - The alt text of the image.
+ * @param {string} props.markdownText - The markdown text to be rendered.
+ * @returns {JSX.Element} The rendered Hero component.
+ */
 const Hero: React.FC<HeroProps> = ({ image, markdownText }) => {
   return (
     <div className="flex flex-col md:flex-row items-center p-6">

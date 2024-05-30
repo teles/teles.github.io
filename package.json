@@ -12,9 +12,11 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.13",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",

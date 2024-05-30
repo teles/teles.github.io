@@ -1,8 +1,8 @@
 // components/stories/Tab.stories.tsx
-import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
-import Tab, { TabProps } from '../tab/Tab';
-import { FaHome } from 'react-icons/fa';
+import React from 'react'
+import { Meta, StoryFn } from '@storybook/react'
+import Tab, { TabProps } from '../tab/Tab'
+import { FaHome } from 'react-icons/fa'
 
 export default {
     title: 'Components/Tab',
@@ -10,13 +10,13 @@ export default {
     argTypes: {
         icon: { control: false },
     }
-} as Meta;
+} as Meta
 
-const Template: StoryFn<TabProps> = (args) => <Tab {...args} />;
+const Template: StoryFn<TabProps> = (args) => <Tab {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
     title: 'Tab Title',
     icon: <FaHome />,
     isActive: false,
-};
+}

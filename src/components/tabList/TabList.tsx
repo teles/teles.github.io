@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Tab from '../tab/Tab';
+import React, { useState } from 'react'
+import Tab from '../tab/Tab'
 
 interface TabData {
   title: string;
@@ -12,7 +12,7 @@ export interface TabListProps {
 }
 
 const TabList: React.FC<TabListProps> = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0)
 
   return (
     <div>
@@ -31,7 +31,7 @@ const TabList: React.FC<TabListProps> = ({ tabs }) => {
         {tabs[activeTab].content}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TabList;
+export default TabList

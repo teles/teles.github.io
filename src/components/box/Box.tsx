@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export interface BoxProps {
   centered?: boolean;
@@ -12,7 +12,7 @@ const Box: React.FC<BoxProps> = ({ centered, children }) => {
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Box;
+export default Box

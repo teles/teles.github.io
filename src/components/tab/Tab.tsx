@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export interface TabProps {
   title: string;
@@ -18,7 +18,7 @@ const Tab: React.FC<TabProps> = ({ title, icon, isActive, onClick }) => {
       {icon && <span className="mr-2">{icon}</span>}
       <span>{title}</span>
     </button>
-  );
-};
+  )
+}
 
-export default Tab;
+export default Tab

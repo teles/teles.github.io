@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 export interface DropdownProps {
   options: string[];
@@ -6,14 +6,14 @@ export interface DropdownProps {
 }
 
 const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false)
+  const [selectedOption, setSelectedOption] = useState<string | null>(null)
 
   const handleOptionClick = (option: string) => {
-    setSelectedOption(option);
-    onSelect(option);
-    setIsOpen(false);
-  };
+    setSelectedOption(option)
+    onSelect(option)
+    setIsOpen(false)
+  }
 
   return (
     <div className="relative inline-block text-left">
@@ -55,7 +55,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown

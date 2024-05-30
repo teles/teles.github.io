@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 
 export interface TextInputProps {
   label: string;
@@ -7,21 +7,21 @@ export interface TextInputProps {
 }
 
 const TextInput: React.FC<TextInputProps> = ({ label, value, onChange }) => {
-  const [isFocused, setIsFocused] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const [isFocused, setIsFocused] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (value) {
-      setIsFocused(true);
+      setIsFocused(true)
     }
-  }, [value]);
+  }, [value])
 
-  const handleFocus = () => setIsFocused(true);
+  const handleFocus = () => setIsFocused(true)
   const handleBlur = () => {
     if (!value) {
-      setIsFocused(false);
+      setIsFocused(false)
     }
-  };
+  }
 
   return (
     <div className="relative">
@@ -45,7 +45,7 @@ const TextInput: React.FC<TextInputProps> = ({ label, value, onChange }) => {
         {label}
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default TextInput;
+export default TextInput

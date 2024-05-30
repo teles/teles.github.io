@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export interface PillProps {
   label: string;
@@ -11,7 +11,7 @@ const Pill: React.FC<PillProps> = ({ label, icon }) => {
       {icon && <span className="mr-2">{icon}</span>}
       <span>{label}</span>
     </div>
-  );
-};
+  )
+}
 
-export default Pill;
+export default Pill

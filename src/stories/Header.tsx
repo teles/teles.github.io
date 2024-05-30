@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import { Button } from './Button';
-import './header.css';
+import { Button } from './Button'
+import './header.css'
 
 type User = {
   name: string;
-};
+}
 
 interface HeaderProps {
   user?: User;
@@ -53,4 +53,4 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
       </div>
     </div>
   </header>
-);
+)

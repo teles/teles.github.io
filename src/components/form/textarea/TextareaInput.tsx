@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 
 export interface TextareaInputProps {
   label: string;
@@ -7,21 +7,21 @@ export interface TextareaInputProps {
 }
 
 const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, onChange }) => {
-  const [isFocused, setIsFocused] = useState(false);
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [isFocused, setIsFocused] = useState(false)
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     if (value) {
-      setIsFocused(true);
+      setIsFocused(true)
     }
-  }, [value]);
+  }, [value])
 
-  const handleFocus = () => setIsFocused(true);
+  const handleFocus = () => setIsFocused(true)
   const handleBlur = () => {
     if (!value) {
-      setIsFocused(false);
+      setIsFocused(false)
     }
-  };
+  }
 
   return (
     <div className="relative">
@@ -45,7 +45,7 @@ const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, onChange })
         {label}
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default TextareaInput;
+export default TextareaInput

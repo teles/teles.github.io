@@ -77,16 +77,13 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Build Storybook
         run: npm run storybook:build
+      - name: Copy storybook to next directory
+        run: cp -r ./storybook ./out/storybook  
       - name: Upload Next.js artifact
         uses: actions/upload-artifact@v4
         with:
           name: nextjs-artifact
-          path: ./out
-      - name: Upload Storybook artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: storybook-artifact
-          path: ./storybook        
+          path: ./out   
 
   # Deployment job
   deploy:

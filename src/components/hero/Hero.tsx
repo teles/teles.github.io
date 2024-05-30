@@ -10,6 +10,10 @@ export interface HeroProps {
     height: number;
   }
   markdownText: string;
+  callToAction?: {
+    text: string;
+    link: string;
+  }
 }
 
 /**
@@ -23,21 +27,28 @@ export interface HeroProps {
  * @param {string} props.markdownText - The markdown text to be rendered.
  * @returns {JSX.Element} The rendered Hero component.
  */
-const Hero: React.FC<HeroProps> = ({ image, markdownText }) => {
+const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
   return (
     <div className="flex flex-col md:flex-row items-center p-6">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
-        <div className="relative h-80 rounded-lg shadow-md overflow-hidden">
+        <div className="relative h-80 rounded-lg">
           <Image
             src={image.src}
             alt={image.alt}
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </div>
       </div>
       <div className="w-full md:w-1/2 md:pl-6">
         <ReactMarkdown className="prose">{markdownText}</ReactMarkdown>
+        {callToAction && (
+          <a
+            href={callToAction.link}
+            target='_blank'
+            className="mt-6 inline-block px-6 py-2 font-semibold text-white bg-pinkish-500 rounded-full hover:bg-pinkish-600 focus:outline-none focus:ring-2 focus:ring-pinkish-400 focus:ring-opacity-75"
+          >{callToAction.text}</a>
+        )}
       </div>
     </div>
   )

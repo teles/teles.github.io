@@ -1,0 +1,26 @@
+[
+  {
+    "columns": [
+      {
+        "components": [
+          {
+            "type": "Hero",
+            "props": {
+              "image": {
+                "src": "/images/teles-min.png",
+                "width": 616,
+                "height": 320,
+                "alt": "Teles' avatar drawn by github.com/teles"
+              },
+              "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
+              "callToAction": {
+                "text": "Connect with me",
+                "link": "https://www.linkedin.com/in/jotateles/"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

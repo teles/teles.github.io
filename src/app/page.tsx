@@ -1,9 +1,10 @@
-import Button from "@/components/button/Button"
+import PageRenderer from "@/components/pageRenderer/PageRenderer"
+import sections from "../../home.json"
 
 export default function Home() {
   return (
-    <main>
-      <Button label="Primary Button" />
+    <main className="min-h-screen container m-auto py-10 md:py-20">
+      <PageRenderer sections={sections} />
     </main>
   )
 }

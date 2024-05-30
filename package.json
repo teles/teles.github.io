@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:build": "storybook build -o storybook"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",

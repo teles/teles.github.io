@@ -57,6 +57,91 @@
     },
     {
       "container": {
+        "bottom": "xs"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "Skills"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "xs"
+      },
+      "columns": [
+        {
+          "width": "1/4",
+          "components": [
+            {
+              "type": "Pill",
+              "props": {
+                "label": "JavaScript"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "TypeScript"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "Node.js"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "React"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "Next.js"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "Tailwind CSS"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "Python"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "SEO"
+              }
+            },
+            {
+              "type": "Pill",
+              "props": {
+                "label": "Shell Script"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
         "bottom": "md"
       },
       "columns": [

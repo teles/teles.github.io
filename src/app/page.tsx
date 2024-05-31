@@ -1,11 +1,15 @@
 import PageRenderer from "@/components/pageRenderer/PageRenderer"
 import configs from "../../home.json"
+import Header from "@/components/header/Header"
 
 export default function Home() {
   const { sections } = configs
   return (
-    <main className="min-h-screen container m-auto py-10 md:py-20">
-      <PageRenderer sections={sections} />
-    </main>
+    <>
+      <Header title="Teles" />
+      <main className="min-h-screen container m-auto py-10 md:py-20">
+        <PageRenderer sections={sections} />
+      </main>
+    </>
   )
 }

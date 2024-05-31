@@ -19,7 +19,7 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
   return (
-    <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-lg">
+    <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-md">
       <div className="relative h-48">
         <Image
           src={image.src}

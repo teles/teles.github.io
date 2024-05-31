@@ -391,6 +391,61 @@
           ]
         }
       ]
+    },
+    {
+      "container": {
+        "top": "md"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "📚 Education"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "top": "md"
+      },
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "FATEC São José dos Campos (2007 - 2010)",
+                "items": [
+                  "Graduated in Database"
+                ]              
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "top": "lg",
+        "bottom": "xs"
+      },      
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "Ruler",
+              "props": {}
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -40,7 +40,8 @@ const componentMap: Record<string, React.ElementType> = {
     Pill: React.lazy(() => import('../pill/Pill')),
     PillList: React.lazy(() => import('../pillList/PillList')),
     Box: React.lazy(() => import('../box/Box')),
-    FlatList: React.lazy(() => import('../flatList/FlatList'))
+    FlatList: React.lazy(() => import('../flatList/FlatList')),
+    Ruler: React.lazy(() => import('../ruler/Ruler')),
 }
 
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {
@@ -67,11 +68,20 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {
     'xl': 'mb-18 md:mb-32'
   }
 
+  const sizesTopMap: Record<Sizes, string> = {
+    'none': '',
+    'xs': 'mt-4 md:mt-8',
+    'sm': 'mt-8 md:mt-12',
+    'md': 'mt-12 md:mt-16',
+    'lg': 'mt-16 md:mt-20',
+    'xl': 'mt-18 md:mt-32'
+  }
+
   return (
     <div>
       {sections.map((section, sectionIndex) => (
-        <section key={sectionIndex} className={"container mx-auto "+sizesBottomMap[section?.container?.bottom ?? 'none']+" px-6 flex flex-col md:flex-row flex-wrap border-box"}>
-          {section.columns.map((column, columnIndex) => (
+        <section key={sectionIndex} className={"container mx-auto "+sizesBottomMap[section?.container?.bottom ?? 'none']+" px-6 flex flex-col md:flex-row flex-wrap border-box " + sizesTopMap[section?.container?.top ?? 'none']}>
+          {section.columns.map((column, columnIndex) => (            
             <div key={columnIndex} className={widthMap[column.width ?? 'full'] + ' pb-4 pr-4 md:pb-6 md:pr-6 flex'}>
               {column.components.map((component, componentIndex) => {
                 const Component = componentMap[component.type]

@@ -39,7 +39,8 @@ const componentMap: Record<string, React.ElementType> = {
     Tab: React.lazy(() => import('../tab/Tab')),
     Pill: React.lazy(() => import('../pill/Pill')),
     PillList: React.lazy(() => import('../pillList/PillList')),
-    Box: React.lazy(() => import('../box/Box'))
+    Box: React.lazy(() => import('../box/Box')),
+    FlatList: React.lazy(() => import('../flatList/FlatList'))
 }
 
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {

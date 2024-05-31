@@ -322,7 +322,7 @@
               "type": "Heading",
               "props": {
                 "level": 2,
-                "text": "Professional Experiences"
+                "text": "👷‍♂️ Professional Experiences"
               }
             }
           ]
@@ -332,60 +332,59 @@
     {
       "columns": [
         {          
-          "width": "1/3",
+          "width": "full",
           "components": [
             {
-              "type": "Card",
+              "type": "FlatList",
               "props": {
-                "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
-                  "width": 616,
-                  "height": 320
-                },
-                "title": "Latitud",
-                "subtitle": "2022 - 2024",
-                "link": "https://www.linkedin.com/company/telesdev/",
-                "text": "Senior Fullstack Developer at Latitud",
-                "tags": [
-                  "Startup",
-                  "TypeScript",
-                  "React",
-                  "Next.js",
-                  "Django",
-                  "Fullstack",
-                  "Node.js",
-                  "Prisma",
-                  "Python"
+                "title": "Senior Software Engineer at Latitud (Dec. 2022 - May 2024)",
+                "items": [
+                  "Developed and maintained a **Python** and **Django** application.",
+                  "Created a system with **Alpine JS** for status visualization.",
+                  "Contributed to company onboarding using React, Next.js, Typescript, Prisma, and GitHub Actions.",
+                  "Mediated between operations and development to improve NPS.",
+                  "Developed frontend components in **React**, **Tailwind**, and **TypeScript** with unit tests in **Jest** and documented in **Storybook**."
                 ]
               }
             }
           ]
         },
         {
-          "width": "1/3",
+          "width": "full",
           "components": [
             {
-              "type": "Card",
+              "type": "FlatList",
               "props": {
-                "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
-                  "width": 616,
-                  "height": 320
-                },
-                "title": "Viva Decora",
-                "subtitle": "2015 - 2022",
-                "link": "https://www.linkedin.com/company/telesdev/",
-                "text": "Senior Frontend Developer / Tech Lead",
-                "tags": [
-                  "JavaScript",
-                  "Vue.js",
-                  "AngularJS",
-                  "SEO",
-                  "Marketplace",
-                  "Startup",
-                  "Leadership",
-                  "WordPress",
-                  "Python"
+                "title": "Frontend Leader and Tech Lead at Viva Decora (May. 2015 - Dec. 2022)",
+                "items": [
+                  "Implemented product filters for REST like API, increasing conversion rates.",
+                  "Strategized API consumption for products in Google Shopping standard.",
+                  "Reduced AWS server costs by 40%.",
+                  "Designed system architecture for integration with partners like Obra Fácil.",
+                  "Established architectural standards for AngularJS.",
+                  "Developed interview and hiring flow for developers.",
+                  "Continuously improved PageSpeed for main products.",
+                  "Implemented improvements in ad revenue metrics.",
+                  "Developed the frontend of a marketplace with over a million products.",
+                  "Monitored the sales funnel via Google Analytics.",
+                  "Migrated a WordPress blog with SEO techniques.",
+                  "Developed a B2B application in WordPress Rest API, Vue.js, and Nuxt."
+                ]                
+              }
+            }
+          ]
+        },
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "Frontend Developer at Qmágico/Eduqo (Jan. 2014 - May. 2015)",
+                "items": [
+                  "Created and maintained frontend components in AngularJS.",
+                  "Organized CSS components with SMACSS and BEM CSS standards.",
+                  "Migrated from Grunt to Gulp, reducing compilation time."
                 ]
               }
             }

@@ -38,6 +38,7 @@ const componentMap: Record<string, React.ElementType> = {
     TabList: React.lazy(() => import('../tabList/TabList')),
     Tab: React.lazy(() => import('../tab/Tab')),
     Pill: React.lazy(() => import('../pill/Pill')),
+    PillList: React.lazy(() => import('../pillList/PillList')),
     Box: React.lazy(() => import('../box/Box'))
 }
 

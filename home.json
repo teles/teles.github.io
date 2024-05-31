@@ -40,8 +40,8 @@
               "props": {
                 "image": {
                   "src": "/images/teles-min.png",
-                  "width": 616,
-                  "height": 320,
+                  "width": 423,
+                  "height": 470,
                   "alt": "Teles' avatar drawn by github.com/teles"
                 },
                 "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
@@ -80,60 +80,65 @@
       },
       "columns": [
         {
-          "width": "1/4",
+          "width": "full",
           "components": [
             {
-              "type": "Pill",
+              "type": "TabList",
               "props": {
-                "label": "JavaScript"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "TypeScript"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "Node.js"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "React"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "Next.js"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "Tailwind CSS"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "Python"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "SEO"
-              }
-            },
-            {
-              "type": "Pill",
-              "props": {
-                "label": "Shell Script"
+                "tabs": [
+                  {
+                    "title": "Frontend",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            "JavaScript",
+                            "TypeScript",
+                            "React",
+                            "Vue.js",
+                            "AngularJS",
+                            "SEO",
+                            "WordPress"
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Soft Skills",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            "Creativity",
+                            "Leadership",
+                            "Teamwork",
+                            "Problem Solving",
+                            "Communication"                            
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Backend",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            "Node.js",
+                            "Python",
+                            "Django",
+                            "Prisma"
+                          ]
+                        }
+                      }                     
+                    ]
+                  }
+                ]
               }
             }
           ]
@@ -298,6 +303,89 @@
                   "SEO",
                   "Awesome List",
                   "GitHub"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "md"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "Professional Experiences"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "columns": [
+        {          
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "width": 616,
+                  "height": 320
+                },
+                "title": "Latitud",
+                "subtitle": "2022 - 2024",
+                "link": "https://www.linkedin.com/company/telesdev/",
+                "text": "Senior Fullstack Developer at Latitud",
+                "tags": [
+                  "Startup",
+                  "TypeScript",
+                  "React",
+                  "Next.js",
+                  "Django",
+                  "Fullstack",
+                  "Node.js",
+                  "Prisma",
+                  "Python"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "width": 616,
+                  "height": 320
+                },
+                "title": "Viva Decora",
+                "subtitle": "2015 - 2022",
+                "link": "https://www.linkedin.com/company/telesdev/",
+                "text": "Senior Frontend Developer / Tech Lead",
+                "tags": [
+                  "JavaScript",
+                  "Vue.js",
+                  "AngularJS",
+                  "SEO",
+                  "Marketplace",
+                  "Startup",
+                  "Leadership",
+                  "WordPress",
+                  "Python"
                 ]
               }
             }

@@ -10,13 +10,14 @@ export interface CardProps {
     height: number;
   }
   title: string;
+  subtitle?: string;
   icon?: React.ReactNode;
   text: string;
   tags: string[];
   link?: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, title, icon, text, tags, link }) => {
+const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
   return (
     <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-lg">
       <div className="relative h-48">
@@ -39,9 +40,10 @@ const Card: React.FC<CardProps> = ({ image, title, icon, text, tags, link }) => 
               title            
             )}
           </h2>
+          {subtitle && <p className="text-gray-600 text-base ml-2 block">{subtitle}</p>}
         </div>
         <p className="text-gray-600 text-base my-4">{text}</p>
-        <div className="mt-4 flex flex-wrap gap-y-2 mt-auto">
+        <div className="flex flex-wrap gap-y-2 mt-auto">
           {tags.map((tag, index) => (
             <Tag key={index} label={tag} />
           ))}

@@ -20,7 +20,7 @@ interface SectionContainer {
   left?: Sizes;
 }
 
-interface Section {
+export interface Section {
   container?: SectionContainer;
   columns: Column[];
 }

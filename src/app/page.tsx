@@ -1,11 +1,12 @@
 "use client"
 import React from "react"
-import PageRenderer from "@/components/pageRenderer/PageRenderer"
+import PageRenderer, { Section } from "@/components/pageRenderer/PageRenderer"
 import configs from "../../home.json"
 import Header from "@/components/header/Header"
 
+
 export default function Home() {
-  const { sections, footer } = configs
+  const { sections, footer } = configs as { sections: Section[], footer: Section[] }
   const [ isDarkMode, setDarkMode] = React.useState(false)
 
   const toggleDarkMode = () => {

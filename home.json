@@ -571,29 +571,35 @@
     {
       "columns": [
         {
-          "width": "auto",
+          "width": "full",
           "components": [
             {
-              "type": "Image",
+              "type": "LinkClouds",
               "props": {                
-                "src": "/images/teles-circle.svg",
-                "width": 80,
-                "height": 80,
-                "alt": "Teles' avatar drawn by github.com/teles"
+                "logo": {
+                  "src": "/images/teles-circle.svg",
+                  "width": 80,
+                  "height": 80,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "text": "**Teles** is a **Creative Software Engineer** and this page is a portfolio of his work.\n\n© 2024, Teles.",
+                "linkColumns": [
+                  {
+                    "title": "Links",
+                    "links": [
+                      {
+                        "title": "Fork this project",
+                        "url": "https://github.com/teles/teles.github.io"
+                      },
+                      {
+                        "title": "Download my resume",
+                        "url": "https://drive.google.com/file/d/1Bi-exXSKFFxIwi5rf2kFj-EaIdGLpYdI/view?usp=sharing"
+                      }
+                    ]
+                  }
+                ]                
               }
             }            
-          ]
-        },
-        {
-          "width": "1/2",
-          "components": [
-            {
-              "type": "Prose",
-              "props": {
-                "size": "sm",
-                "text": "© 2024 Teles. Developed using React and Next. Hosted on GitHub Pages.\n\nDesigned by [Marcella Sanches](https://www.linkedin.com/in/sanches-marcella/)."
-              }
-            }
           ]
         }
       ]

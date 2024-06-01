@@ -30,22 +30,23 @@ interface PageRendererProps {
 }
 
 const componentMap: Record<string, React.ElementType> = {
-    Heading: React.lazy(() => import('../heading/Heading')),
-    Hero: React.lazy(() => import('../hero/Hero')),
-    Tag: React.lazy(() => import('../tag/Tag')),
-    Card: React.lazy(() => import('../card/Card')),
-    Button: React.lazy(() => import('../button/Button')),
-    TabList: React.lazy(() => import('../tabList/TabList')),
-    Tab: React.lazy(() => import('../tab/Tab')),
-    Pill: React.lazy(() => import('../pill/Pill')),
-    PillList: React.lazy(() => import('../pillList/PillList')),
-    Box: React.lazy(() => import('../box/Box')),
-    FlatList: React.lazy(() => import('../flatList/FlatList')),
-    Ruler: React.lazy(() => import('../ruler/Ruler')),
-    Formulary: React.lazy(() => import('../form/Formulary')),
-    Prose: React.lazy(() => import('../prose/Prose')),
-    IconsBox: React.lazy(() => import('../iconsBox/IconsBox')),
-    Image: React.lazy(() => import('../imageComponent/ImageComponent')),
+  Heading: React.lazy(() => import('../heading/Heading')),
+  Hero: React.lazy(() => import('../hero/Hero')),
+  Tag: React.lazy(() => import('../tag/Tag')),
+  Card: React.lazy(() => import('../card/Card')),
+  Button: React.lazy(() => import('../button/Button')),
+  TabList: React.lazy(() => import('../tabList/TabList')),
+  Tab: React.lazy(() => import('../tab/Tab')),
+  Pill: React.lazy(() => import('../pill/Pill')),
+  PillList: React.lazy(() => import('../pillList/PillList')),
+  Box: React.lazy(() => import('../box/Box')),
+  FlatList: React.lazy(() => import('../flatList/FlatList')),
+  Ruler: React.lazy(() => import('../ruler/Ruler')),
+  Formulary: React.lazy(() => import('../form/Formulary')),
+  Prose: React.lazy(() => import('../prose/Prose')),
+  IconsBox: React.lazy(() => import('../iconsBox/IconsBox')),
+  Image: React.lazy(() => import('../imageComponent/ImageComponent')),
+  LinkClouds: React.lazy(() => import('../linkClouds/LinkClouds'))
 }
 
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {

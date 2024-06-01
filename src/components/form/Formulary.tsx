@@ -10,7 +10,9 @@ interface FormularyProps {
   fields: {
     type: 'text' | 'email' | 'password' | 'number' | 'date' | 'textarea' | 'submit'
     name: string;
-    label: string;
+    props: {
+      label: string;
+    }
   }[]
 }
 
@@ -38,20 +40,22 @@ const Formulary: React.FC<FormularyProps> = ({ onSubmit, fields }) => {
           case 'password':
           case 'number':
             return (
-              <TextInput
-                key={index}
-                label={field.label}
-                value={data[field.name] || ''}
-                onChange={handleChange}
-                type={field.type}
-                name={field.name}
-              />
+              <>
+                <TextInput
+                  key={index}
+                  label={field.props.label}
+                  value={data[field.name] || ''}
+                  onChange={handleChange}                
+                  type={field.type}
+                  name={field.name}
+                />
+              </>
             )
           case 'textarea':
             return (
               <TextArea
                 key={index}
-                label={field.label}
+                label={field.props.label}
                 value={data[field.name] || ''}
                 onChange={handleChange}
                 name={field.name}

@@ -3,12 +3,13 @@ import React from 'react'
 export interface BoxProps {
   centered?: boolean;
   children: React.ReactNode;
+  className?: string;
 }
 
-const Box: React.FC<BoxProps> = ({ centered, children }) => {
+const Box: React.FC<BoxProps> = ({ centered, children, className = '' }) => {
   return (
     <div
-      className={`border border-gray-300 p-4 rounded-md ${centered ? 'flex justify-center items-center' : ''}`}
+      className={`${className} border border-gray-300 p-4 rounded-xl ${centered ? 'flex justify-center items-center' : ''}`}
     >
       {children}
     </div>

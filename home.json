@@ -457,7 +457,7 @@
     {
       "container": {
         "top": "md",
-        "bottom": "md"
+        "bottom": "xs"
       },
       "columns": [
         {
@@ -490,6 +490,31 @@
         "bottom": "none"
       },
       "columns": [
+        {
+          "width":"1/2",
+          "components": [
+            {
+              "type": "IconsBox",
+              "props": {
+                "title": "Social Links",
+                "icons": [
+                  {
+                    "name": "GitHub",
+                    "link": "https://github.com/teles"
+                  },
+                  {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/telesdev/"
+                  },                  
+                  {
+                    "name": "DevTo",
+                    "link": "https://dev.to/teles"
+                  }
+                ]
+              }
+            }
+          ]
+        },
         {
           "width": "1/2",
           "components": [

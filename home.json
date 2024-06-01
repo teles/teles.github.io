@@ -47,6 +47,7 @@
                 "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
                 "callToAction": {
                   "text": "Connect with me",
+                  "icon": "LinkedIn",
                   "link": "https://www.linkedin.com/in/telesdev/"
                 }
               }
@@ -101,7 +102,6 @@
                             ["Vue.js", 5],
                             ["AngularJS", 5],
                             ["Tailwind", 5],
-                            ["SEO", 4],
                             ["Markdown", 5],
                             ["SVG", 5],
                             ["Accessibility", 3],
@@ -152,6 +152,7 @@
                             ["Git", 5],
                             ["Versioning", 5],
                             ["CI/CD", 4],
+                            ["SEO", 5],
                             ["Agile", 4],
                             ["Scrum", 4],
                             ["Kanban", 4]
@@ -452,18 +453,18 @@
           ]
         }
       ]
-    },
+    }
+  ],
+  "footer": [
     {
-      "container": {
-        "top": "lg",
-        "bottom": "xs"
-      },      
       "columns": [
         {
           "components": [
             {
-              "type": "Ruler",
-              "props": {}
+              "type": "Text",
+              "props": {
+                "text": "© 2024 Teles. All rights reserved."
+              }
             }
           ]
         }

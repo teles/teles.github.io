@@ -1,13 +1,15 @@
 import React from 'react'
+import { iconMap } from '../textToIcon/TextToIcon'
 
 type ButtonProps = {
   label: string;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
+  icon?: typeof iconMap[keyof typeof iconMap];
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick, type = 'button', disabled = false }) => {
+const Button: React.FC<ButtonProps> = ({ label, icon, onClick, type = 'button', disabled = false }) => {
   return (
     <button
       type={type}
@@ -17,6 +19,7 @@ const Button: React.FC<ButtonProps> = ({ label, onClick, type = 'button', disabl
         disabled ? 'opacity-50 cursor-not-allowed' : ''
       }`}
     >
+      {icon && icon}
       {label}
     </button>
   )

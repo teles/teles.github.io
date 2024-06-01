@@ -50,7 +50,7 @@ const componentMap: Record<string, React.ElementType> = {
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {
   const widthMap: Record<ColumnWidth, string> = {
     '1/2': 'w-full md:w-1/2 lg:w-1/2 xl:w-1/2',
-    '1/3': 'w-full md:w-1/3 lg:w-1/3 xl:w-1/3',
+    '1/3': 'w-full md:w-1/2 lg:w-1/3 xl:w-1/3',
     '2/3': 'w-full md:w-2/3 lg:w-2/3 xl:w-2/3',
     '1/4': 'w-full md:w-1/4 lg:w-1/4 xl:w-1/4',
     '3/4': 'w-full md:w-3/4 lg:w-3/4 xl:w-3/4',
@@ -68,7 +68,7 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {
     'sm': 'mb-8 md:mb-12',
     'md': 'mb-12 md:mb-16',
     'lg': 'mb-16 md:mb-20',
-    'xl': 'mb-18 md:mb-32'
+    'xl': 'mb-20 md:mb-32'
   }
 
   const sizesTopMap: Record<Sizes, string> = {

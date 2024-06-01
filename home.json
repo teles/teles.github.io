@@ -509,6 +509,14 @@
                   {
                     "name": "DevTo",
                     "link": "https://dev.to/teles"
+                  },
+                  {
+                    "name": "CodePen",
+                    "link": "https://codepen.io/teles"
+                  },
+                  {
+                    "name": "NPM",
+                    "link": "https://www.npmjs.com/~teles"
                   }
                 ]
               }
@@ -561,10 +569,23 @@
     {
       "columns": [
         {
+          "width": "1/2",
           "components": [
             {
               "type": "Prose",
               "props": {
+                "text": "![alt text](/images/teles-circle.svg)"
+              }
+            }            
+          ]
+        },
+        {
+          "width": "1/2",
+          "components": [
+            {
+              "type": "Prose",
+              "props": {
+                "size": "sm",
                 "text": "© 2024 Teles. Developed using React and Next. Hosted on GitHub Pages.\n\nDesigned by [Marcella Sanches](https://www.linkedin.com/in/sanches-marcella/)."
               }
             }

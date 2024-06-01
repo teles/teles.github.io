@@ -19,13 +19,13 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
   return (
-    <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-md">
+    <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-md grow">
       <div className="relative h-48">
         <Image
           src={image.src}
           alt={image.alt}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
       </div>
       <div className="flex flex-col px-6 pt-6 pb-8 border-t border-gray-200 grow">

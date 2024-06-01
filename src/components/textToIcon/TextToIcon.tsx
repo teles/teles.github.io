@@ -1,4 +1,12 @@
-import { FaGithub, FaHome, FaLinkedin, FaNpm, FaStar, FaDev } from 'react-icons/fa'
+import { 
+  FaGithub, 
+  FaHome, 
+  FaLinkedin, 
+  FaNpm, 
+  FaStar, 
+  FaDev,
+  FaCodepen,
+ } from 'react-icons/fa'
 
 interface TextToIconProps {
   icon: string;
@@ -12,6 +20,7 @@ export const iconMap: Record<string, React.ReactNode> = {
     GitHub: <FaGithub />,
     NPM: <FaNpm />,
     DevTo: <FaDev />,
+    CodePen: <FaCodepen />,
 } as const
 
 const TextToIcon: React.FC<TextToIconProps> = ({ icon, className = '' }) => {

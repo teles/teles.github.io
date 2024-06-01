@@ -43,6 +43,7 @@ const componentMap: Record<string, React.ElementType> = {
     FlatList: React.lazy(() => import('../flatList/FlatList')),
     Ruler: React.lazy(() => import('../ruler/Ruler')),
     Formulary: React.lazy(() => import('../form/Formulary')),
+    Prose: React.lazy(() => import('../prose/Prose')),
 }
 
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {

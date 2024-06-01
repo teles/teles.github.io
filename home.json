@@ -456,21 +456,40 @@
     },
     {
       "container": {
-        "bottom": "none"
+        "top": "md",
+        "bottom": "md"
       },
       "columns": [
         {
-          "width": "1/2",
+          "width": "full",
           "components": [
             {
               "type": "Heading",
               "props": {
                 "level": 2,
-                "text": "📬 Contact"
+                "text": "Let's work together! 🚀"
               }
             }
           ]
         },
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Prose",
+              "props": {
+                "text": "If you are interested in working with me, please send me a message."
+              }
+            }
+          ]
+        }        
+      ]
+    },
+    {
+      "container": {
+        "bottom": "none"
+      },
+      "columns": [
         {
           "width": "1/2",
           "components": [

@@ -9,12 +9,10 @@ export interface TextareaInputProps {
 
 const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, name, onChange }) => {
   const [isFocused, setIsFocused] = useState(false)
-  const [inputValue, setInputValue] = useState<string>(value)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     if (value) {
-      setInputValue(value)
       setIsFocused(true)
     }
   }, [value])

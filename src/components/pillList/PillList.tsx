@@ -2,14 +2,14 @@ import React from 'react'
 import Pill from '../pill/Pill'
 
 interface PillListProps {
-  pills: string[];  
+  pills: string[][];  
 }
 
 const PillList: React.FC<PillListProps> = ({ pills }) => {
   return (
     <div className='w-full columns-2 md:columns-3 lg:columns-4'>
-      {pills.map((pill, index) => (
-        <Pill key={index} label={pill} />
+      {pills.map(([pill, level], index) => (
+        <Pill key={index} label={pill} level={parseInt(level) as 1 | 2 | 3 | 4 | 5 | undefined} />
       ))}
     </div>
   )

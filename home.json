@@ -93,13 +93,16 @@
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            "JavaScript",
-                            "TypeScript",
-                            "React",
-                            "Vue.js",
-                            "AngularJS",
-                            "SEO",
-                            "WordPress"
+                            ["JavaScript", 5],
+                            ["CSS", 5],
+                            ["HTML", 5],
+                            ["TypeScript", 5],
+                            ["React", 5],
+                            ["Vue.js", 5],
+                            ["AngularJS", 5],
+                            ["Tailwind", 5],
+                            ["SEO", 4],
+                            ["UX", 5]                            
                           ]
                         }
                       }
@@ -112,11 +115,12 @@
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            "Creativity",
-                            "Leadership",
-                            "Teamwork",
-                            "Problem Solving",
-                            "Communication"                            
+                            ["Creativity", 5],
+                            ["Leadership", 4],
+                            ["Teamwork", 5],
+                            ["Problem Solving", 4],
+                            ["Communication", 4],
+                            ["Empathy", 5]                            
                           ]
                         }
                       }
@@ -129,10 +133,15 @@
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            "Node.js",
-                            "Python",
-                            "Django",
-                            "Prisma"
+                            ["Node.js", 5],
+                            ["Python", 4],
+                            ["Django", 4],
+                            ["Nuxt", 4],
+                            ["Next", 4],
+                            ["Rest API", 4],
+                            ["Prisma", 4],
+                            ["Alpine JS", 3],
+                            ["WordPress", 4]
                           ]
                         }
                       }                     
@@ -200,9 +209,9 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "https://holy-sheets.github.io/docs/logo.svg",
-                  "width": 616,
-                  "height": 320,
+                  "src": "/images/holy-sheets.png",
+                  "width": 358,
+                  "height": 192,
                   "alt": "Teles' avatar drawn by github.com/teles"
                 },
                 "title": "HolySheets!",
@@ -224,7 +233,7 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "src": "/images/array-mixer.png",
                   "width": 616,
                   "height": 320
                 },

@@ -569,12 +569,15 @@
     {
       "columns": [
         {
-          "width": "1/2",
+          "width": "auto",
           "components": [
             {
-              "type": "Prose",
-              "props": {
-                "text": "![alt text](/images/teles-circle.svg)"
+              "type": "Image",
+              "props": {                
+                "src": "/images/teles-circle.svg",
+                "width": 80,
+                "height": 80,
+                "alt": "Teles' avatar drawn by github.com/teles"
               }
             }            
           ]

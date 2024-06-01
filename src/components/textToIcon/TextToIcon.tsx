@@ -6,6 +6,8 @@ import {
   FaStar, 
   FaDev,
   FaCodepen,
+  FaMoon,
+  FaSun
  } from 'react-icons/fa'
 
 interface TextToIconProps {
@@ -21,6 +23,8 @@ export const iconMap: Record<string, React.ReactNode> = {
     NPM: <FaNpm />,
     DevTo: <FaDev />,
     CodePen: <FaCodepen />,
+    Moon: <FaMoon />,
+    Sun: <FaSun />
 } as const
 
 const TextToIcon: React.FC<TextToIconProps> = ({ icon, className = '' }) => {

@@ -45,6 +45,7 @@ const componentMap: Record<string, React.ElementType> = {
     Formulary: React.lazy(() => import('../form/Formulary')),
     Prose: React.lazy(() => import('../prose/Prose')),
     IconsBox: React.lazy(() => import('../iconsBox/IconsBox')),
+    Image: React.lazy(() => import('../imageComponent/ImageComponent')),
 }
 
 const PageRenderer: React.FC<PageRendererProps> = ({ sections }) => {

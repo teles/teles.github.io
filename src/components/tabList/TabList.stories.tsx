@@ -16,17 +16,17 @@ Default.args = {
     {
       title: 'Home',
       icon: <FaHome />,
-      content: <div>Home Content</div>,
+      components: []
     },
     {
       title: 'About',
       icon: <FaInfo />,
-      content: <div>About Content</div>,
+      components: []
     },
     {
       title: 'Profile',
       icon: <FaUser />,
-      content: <div>Profile Content</div>,
+      components: []
     },
   ],
 }

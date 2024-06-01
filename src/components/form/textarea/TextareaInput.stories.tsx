@@ -13,7 +13,12 @@ export default {
 
 const Template: StoryFn<TextareaInputProps> = (args) => {
   const [value, setValue] = useState(args.value)
-  return <TextareaInput {...args} value={value} onChange={setValue} />
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setValue(e.target.value)
+  }
+
+  return <TextareaInput {...args} value={value} onChange={handleChange} />
 }
 
 export const Default = Template.bind({})

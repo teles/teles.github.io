@@ -170,7 +170,7 @@
       },
       "columns": [
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",
@@ -194,7 +194,7 @@
           ]
         },
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",
@@ -218,7 +218,7 @@
           ]
         },
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",
@@ -240,7 +240,7 @@
           ]
         },
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",
@@ -262,7 +262,7 @@
           ]
         },
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",
@@ -286,7 +286,7 @@
           ]
         },
         {
-          "width": "1/4",
+          "width": "1/3",
           "components": [
             {
               "type": "Card",

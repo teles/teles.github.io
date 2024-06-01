@@ -563,9 +563,9 @@
         {
           "components": [
             {
-              "type": "Text",
+              "type": "Prose",
               "props": {
-                "text": "© 2024 Teles. All rights reserved."
+                "text": "© 2024 Teles. Developed using React and Next. Hosted on GitHub Pages.\n\nDesigned by [Marcella Sanches](https://www.linkedin.com/in/sanches-marcella/)."
               }
             }
           ]

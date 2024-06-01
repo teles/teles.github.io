@@ -10,7 +10,7 @@ export default function Home() {
       <main className="min-h-screen container max-w-[1200px] m-auto py-10 md:py-20">
         <PageRenderer sections={sections} />
       </main>
-      <footer className="container max-w-[1200px] m-auto py-10 md:py-20 border-t border-gray-200">
+      <footer className="container max-w-[1200px] m-auto pt-10 pb-5 border-t border-gray-200">
         <PageRenderer sections={footer} />
       </footer>
     </>

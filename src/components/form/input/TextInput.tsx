@@ -3,10 +3,12 @@ import React, { useState, useRef, useEffect } from 'react'
 export interface TextInputProps {
   label: string;
   value: string;
-  onChange: (value: string) => void;
+  type: "number" | "text" | "email" | "password";
+  name: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
-const TextInput: React.FC<TextInputProps> = ({ label, value, onChange }) => {
+const TextInput: React.FC<TextInputProps> = ({ label, value, type = 'text', name, onChange }) => {
   const [isFocused, setIsFocused] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -27,9 +29,9 @@ const TextInput: React.FC<TextInputProps> = ({ label, value, onChange }) => {
     <div className="relative">
       <input
         ref={inputRef}
-        type="text"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
+        type={type}
+        name={name}
+        onChange={onChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
         className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"

@@ -453,6 +453,64 @@
           ]
         }
       ]
+    },
+    {
+      "container": {
+        "bottom": "none"
+      },
+      "columns": [
+        {
+          "width": "1/2",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "📬 Contact"
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/2",
+          "components": [
+            {
+              "type": "Formulary",
+              "props": {
+                "fields": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "label": "Name",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "email",
+                    "props": {
+                      "label": "Email",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "textarea",
+                    "props": {
+                      "label": "Message",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "submit",
+                    "props": {
+                      "text": "Send"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "footer": [

@@ -11,28 +11,185 @@
       "site_name": "Teles Portfolio",
       "images": [
         {
-          "url": "https://teles.dev.br/og-image.jpg",
+          "url": "https://teles.dev.br/images/ogimage.png",
           "width": 1200,
           "height": 630,
           "alt": "Teles - Creative Software Engineer"
         }
       ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@your_twitter_handle",
-      "title": "Teles - Creative Software Engineer",
-      "description": "Creative Software Engineer with over 11 years of experience in web development, focused on frontend technologies, and proficient in JavaScript, TypeScript, Node, Python, and more. Dedicated to SEO and UX, and have worked on products reaching millions of users in Brazil and numerous startup founders.",
-      "image": "https://your-website-url.com/twitter-image.jpg"
     }
   },
   "sections": [
     {
+      "container": {
+        "bottom": "xl"
+      },
       "columns": [
         {
+          "width": "full",
           "components": [
             {
               "type": "Hero",
+              "props": {
+                "image": {
+                  "src": "/images/teles-min.png",
+                  "width": 423,
+                  "height": 470,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
+                "callToAction": {
+                  "text": "Connect with me",
+                  "icon": "LinkedIn",
+                  "link": "https://www.linkedin.com/in/telesdev/"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "xs"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "🧰 Skills"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "xs"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "TabList",
+              "props": {
+                "tabs": [
+                  {
+                    "title": "Frontend",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            ["JavaScript", 5],
+                            ["CSS", 5],
+                            ["HTML", 5],
+                            ["TypeScript", 5],
+                            ["React", 5],
+                            ["Vue.js", 5],
+                            ["AngularJS", 5],
+                            ["Tailwind", 5],
+                            ["Markdown", 5],
+                            ["SVG", 5],
+                            ["Accessibility", 3],
+                            ["UX", 5],
+                            ["Jest", 4]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Backend",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            ["Node.js", 5],
+                            ["Python", 4],
+                            ["Django", 4],
+                            ["Nuxt", 4],
+                            ["Next", 4],
+                            ["Rest API", 4],
+                            ["Prisma", 4],
+                            ["Alpine JS", 3],
+                            ["WordPress", 4],
+                            ["PyTest", 4]
+                          ]
+                        }
+                      }                     
+                    ]
+                  },                  
+                  {
+                    "title": "Soft Skills +",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            ["Creativity", 5],
+                            ["Leadership", 4],
+                            ["Teamwork", 5],
+                            ["Problem Solving", 4],
+                            ["Communication", 4],
+                            ["Empathy", 5],
+                            ["Clean Code", 5],
+                            ["TDD", 4],
+                            ["Git", 5],
+                            ["Versioning", 5],
+                            ["CI/CD", 4],
+                            ["SEO", 5],
+                            ["Agile", 4],
+                            ["Scrum", 4],
+                            ["Kanban", 4]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "md"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "👨‍💻 Projects"
+              }
+            }
+          ]
+        }
+      ]      
+    },
+    {
+      "container": {
+        "bottom": "md"
+      },
+      "columns": [
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
               "props": {
                 "image": {
                   "src": "/images/teles-min.png",
@@ -40,13 +197,402 @@
                   "height": 320,
                   "alt": "Teles' avatar drawn by github.com/teles"
                 },
-                "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
-                "callToAction": {
-                  "text": "Connect with me",
-                  "link": "https://www.linkedin.com/in/jotateles/"
-                }
+                "title": "Personal Website",
+                "link": "https://github.com/teles/teles.github.io",
+                "text": "My personal website, portfolio, and blog. Built with Next.js, Tailwind CSS, and MDX.",
+                "tags": [
+                  "React",
+                  "Next.js",
+                  "Tailwind CSS"
+                ]
               }
             }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "/images/holy-sheets.png",
+                  "width": 358,
+                  "height": 192,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "title": "HolySheets!",
+                "link": "https://holy-sheets.github.io/",
+                "text": "A Google Sheets add-on that helps you manage your spreadsheets with ease.",
+                "tags": [
+                  "TypeScript",
+                  "NPM Library",
+                  "Backend",
+                  "Google Sheets"                  
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "/images/array-mixer.png",
+                  "width": 616,
+                  "height": 320
+                },
+                "title": "Array Mixer",
+                "link": "https://teles.dev.br/array-mixer/",
+                "text": "A simple and lightweight library to shuffle arrays in JavaScript.",
+                "tags": [
+                  "JavaScript",
+                  "NPM Library",
+                  "TypeScript"
+                ]
+              }              
+            }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "width": 616,
+                  "height": 320
+                },                
+                "title": "Awesome Parser Action",
+                "link": "https://github.com/teles/awesome-parser-action",
+                "text": "A GitHub Action that parses a markdown file and creates a JSON file with its content.",
+                "tags": [
+                  "Shell Script",
+                  "GitHub Action"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "width": 616,
+                  "height": 320
+                },                
+                "title": "Taildown - Markdown editor",
+                "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
+                "link": "https://github.com/taildown/taildown.github.io",
+                "tags": [
+                  "Tailwind CSS",
+                  "Markdown",
+                  "React",
+                  "TypeScript"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/3",
+          "components": [
+            {
+              "type": "Card",
+              "props": {
+                "image": {
+                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "width": 616,
+                  "height": 320
+                },                
+                "title": "Awesome SEO",
+                "text": "Free list of projects, articles, and tools related to SEO.",
+                "link": "https://github.com/teles/awesome-seo",
+                "tags": [
+                  "SEO",
+                  "Awesome List",
+                  "GitHub"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "bottom": "md"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "👷‍♂️ Professional Experiences"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "columns": [
+        {          
+          "width": "full",
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "Senior Software Engineer at Latitud (Dec. 2022 - May 2024)",
+                "items": [
+                  "Developed and maintained a **Python** and **Django** application.",
+                  "Created a system with **Alpine JS** for status visualization.",
+                  "Contributed to company onboarding using React, Next.js, Typescript, Prisma, and GitHub Actions.",
+                  "Mediated between operations and development to improve NPS.",
+                  "Developed frontend components in **React**, **Tailwind**, and **TypeScript** with unit tests in **Jest** and documented in **Storybook**."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "Frontend Leader and Tech Lead at Viva Decora (May. 2015 - Dec. 2022)",
+                "items": [
+                  "Implemented product filters for REST like API, increasing conversion rates.",
+                  "Strategized API consumption for products in Google Shopping standard.",
+                  "Reduced AWS server costs by 40%.",
+                  "Designed system architecture for integration with partners like Obra Fácil.",
+                  "Established architectural standards for AngularJS.",
+                  "Developed interview and hiring flow for developers.",
+                  "Continuously improved PageSpeed for main products.",
+                  "Implemented improvements in ad revenue metrics.",
+                  "Developed the frontend of a marketplace with over a million products.",
+                  "Monitored the sales funnel via Google Analytics.",
+                  "Migrated a WordPress blog with SEO techniques.",
+                  "Developed a B2B application in WordPress Rest API, Vue.js, and Nuxt."
+                ]                
+              }
+            }
+          ]
+        },
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "Frontend Developer at Qmágico/Eduqo (Jan. 2014 - May. 2015)",
+                "items": [
+                  "Created and maintained frontend components in AngularJS.",
+                  "Organized CSS components with SMACSS and BEM CSS standards.",
+                  "Migrated from Grunt to Gulp, reducing compilation time."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "top": "md"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "📚 Education"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "top": "md"
+      },
+      "columns": [
+        {
+          "components": [
+            {
+              "type": "FlatList",
+              "props": {
+                "title": "FATEC São José dos Campos (2007 - 2010)",
+                "items": [
+                  "Graduated in Database"
+                ]              
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "container": {
+        "top": "md",
+        "bottom": "xs"
+      },
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Heading",
+              "props": {
+                "level": 2,
+                "text": "Let's work together! 🚀"
+              }
+            }
+          ]
+        },
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "Prose",
+              "props": {
+                "text": "If you are interested in working with me, please send me a message."
+              }
+            }
+          ]
+        }        
+      ]
+    },
+    {
+      "container": {
+        "bottom": "none"
+      },
+      "columns": [
+        {
+          "width":"1/2",
+          "components": [
+            {
+              "type": "IconsBox",
+              "props": {
+                "title": "Social Links",
+                "icons": [
+                  {
+                    "name": "GitHub",
+                    "link": "https://github.com/teles"
+                  },
+                  {
+                    "name": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/telesdev/"
+                  },                  
+                  {
+                    "name": "DevTo",
+                    "link": "https://dev.to/teles"
+                  },
+                  {
+                    "name": "CodePen",
+                    "link": "https://codepen.io/teles"
+                  },
+                  {
+                    "name": "NPM",
+                    "link": "https://www.npmjs.com/~teles"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": "1/2",
+          "components": [
+            {
+              "type": "Formulary",
+              "props": {
+                "fields": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "label": "Name",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "email",
+                    "props": {
+                      "label": "Email",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "textarea",
+                    "props": {
+                      "label": "Message",
+                      "required": true
+                    }
+                  },
+                  {
+                    "type": "submit",
+                    "props": {
+                      "text": "Send"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "columns": [
+        {
+          "width": "full",
+          "components": [
+            {
+              "type": "LinkClouds",
+              "props": {                
+                "logo": {
+                  "src": "/images/teles-circle.svg",
+                  "width": 80,
+                  "height": 80,
+                  "alt": "Teles' avatar drawn by github.com/teles"
+                },
+                "text": "**Teles** is a **Creative Software Engineer** and this page is a portfolio of his work.\n\n© 2024, Teles.",
+                "linkColumns": [
+                  {
+                    "title": "Links",
+                    "links": [
+                      {
+                        "title": "Fork this project",
+                        "url": "https://github.com/teles/teles.github.io"
+                      },
+                      {
+                        "title": "Download my resume",
+                        "url": "https://drive.google.com/file/d/1Bi-exXSKFFxIwi5rf2kFj-EaIdGLpYdI/view?usp=sharing"
+                      }
+                    ]
+                  }
+                ]                
+              }
+            }            
           ]
         }
       ]

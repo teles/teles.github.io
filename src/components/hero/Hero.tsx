@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
+import { iconMap } from '../textToIcon/TextToIcon'
+import TextToIcon from '../textToIcon/TextToIcon'
 
 export interface HeroProps {
   image: {
@@ -13,6 +15,7 @@ export interface HeroProps {
   callToAction?: {
     text: string;
     link: string;
+    icon?: keyof typeof iconMap;
   }
 }
 
@@ -29,7 +32,7 @@ export interface HeroProps {
  */
 const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center p-6">
+    <div className="flex flex-col md:flex-row items-center w-full bg-white dark:bg-slate-900">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <div className="relative h-80 rounded-lg">
           <Image
@@ -41,13 +44,18 @@ const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
         </div>
       </div>
       <div className="w-full md:w-1/2 md:pl-6">
-        <ReactMarkdown className="prose">{markdownText}</ReactMarkdown>
+        <ReactMarkdown className="prose dark:prose-invert">{markdownText}</ReactMarkdown>
         {callToAction && (
-          <a
-            href={callToAction.link}
-            target='_blank'
-            className="mt-6 inline-block px-6 py-2 font-semibold text-white bg-pinkish-500 rounded-full hover:bg-pinkish-600 focus:outline-none focus:ring-2 focus:ring-pinkish-400 focus:ring-opacity-75"
-          >{callToAction.text}</a>
+          <>            
+            <a
+              href={callToAction.link}
+              target='_blank'
+              className="mt-6 inline-flex items-center px-6 py-2 gap-x-2 font-semibold text-white bg-pinkish-500 rounded-full hover:bg-pinkish-600 focus:outline-none focus:ring-2 focus:ring-pinkish-400 focus:ring-opacity-75"
+            >
+              {callToAction.icon && <TextToIcon icon={callToAction.icon} />}
+              {callToAction.text}
+            </a>
+          </>
         )}
       </div>
     </div>

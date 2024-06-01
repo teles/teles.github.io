@@ -20,7 +20,7 @@ const Heading: React.FC<HeadingProps> = ({ level, text, link }) => {
     'text-base font-medium',
   ]    
   return (
-    <div className="flex items-center">
+    <div className="flex items-center leading-6 dark:text-white">
       <HeadingTag className={'mr-2 '+ headingByLevel[level - 1]}>{text}</HeadingTag>
       {link && (
         <a href={link.href} className="text-blue-500">

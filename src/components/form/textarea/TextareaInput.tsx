@@ -3,10 +3,11 @@ import React, { useState, useRef, useEffect } from 'react'
 export interface TextareaInputProps {
   label: string;
   value: string;
-  onChange: (value: string) => void;
+  name: string;  
+  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
-const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, onChange }) => {
+const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, name, onChange }) => {
   const [isFocused, setIsFocused] = useState(false)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
@@ -27,11 +28,11 @@ const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, onChange })
     <div className="relative">
       <textarea
         ref={textareaRef}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={onChange}        
         onFocus={handleFocus}
+        name={name}
         onBlur={handleBlur}
-        className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="block w-full px-4 py-2 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         rows={4}
       />
       <label

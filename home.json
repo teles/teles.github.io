@@ -208,9 +208,9 @@
                 "link": "https://github.com/teles/teles.github.io",
                 "text": "My personal website, portfolio, and blog. Built with Next.js, Tailwind CSS, and MDX.",
                 "tags": [
+                  "React",
                   "Next.js",
-                  "Tailwind CSS",
-                  "MDX"
+                  "Tailwind CSS"
                 ]
               }
             }
@@ -234,6 +234,7 @@
                 "tags": [
                   "TypeScript",
                   "NPM Library",
+                  "Backend",
                   "Google Sheets"                  
                 ]
               }
@@ -256,7 +257,8 @@
                 "text": "A simple and lightweight library to shuffle arrays in JavaScript.",
                 "tags": [
                   "JavaScript",
-                  "NPM Library"
+                  "NPM Library",
+                  "TypeScript"
                 ]
               }              
             }

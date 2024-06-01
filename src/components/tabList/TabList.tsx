@@ -36,7 +36,7 @@ const TabList: React.FC<TabListProps> = ({ tabs }) => {
 
   return (
     <div className='w-full'>
-      <div className="flex border-b">
+      <div className="flex border-b border-gray-200 dark:border-slate-700">
         {tabs.map((tab, index) => (
           <Tab
             key={index}

@@ -15,12 +15,12 @@ interface ProseProps {
  */
 const  Prose: React.FC<ProseProps> = ({ text, size = 'base' }) => {
   const sizeToClasses: Record<ProseProps['size'], string> = {
-    xs: 'prose-sm dark:prose-sm-invert',
+    xs: 'prose-sm dark:prose-invert',
     base: 'prose dark:prose-invert',
-    sm: 'prose-sm dark:prose-sm-invert',
+    sm: 'prose-sm dark:prose-invert',
     md: 'prose dark:prose-invert',
-    lg: 'prose-lg dark:prose-lg-invert',
-    xl: 'prose-xl dark:prose-xl-invert'    
+    lg: 'prose-lg dark:prose-invert',
+    xl: 'prose-xl dark:prose-invert'    
   }
   return (
     <ReactMarkdown className={sizeToClasses[size]}>{text}</ReactMarkdown>

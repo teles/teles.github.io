@@ -13,7 +13,7 @@ interface IconBoxProps {
 const IconsBox: React.FC<IconBoxProps> = ({ icons, title }) => {
   return (
     <Box className='p-6' centered={true}>
-      <h2 className='text-base font-bold text-gray-600 mb-2'>{title}</h2>
+      <h2 className='text-base font-bold text-gray-600 dark:text-slate-200 mb-2'>{title}</h2>
       <ul className='flex gap-2 mb-2'>
         {icons.map((icon, index) => (
           <li key={index}>

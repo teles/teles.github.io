@@ -297,8 +297,8 @@
                   "width": 616,
                   "height": 320
                 },                
-                "title": "Taildown",
-                "text": "Markdown Editor with Tailwind CSS classes.",
+                "title": "Taildown - Markdown editor",
+                "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
                 "link": "https://github.com/taildown/taildown.github.io",
                 "tags": [
                   "Tailwind CSS",

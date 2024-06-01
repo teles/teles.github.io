@@ -8,9 +8,9 @@ export interface PillProps {
 
 const Pill: React.FC<PillProps> = ({ label, icon, level }) => {
   return (
-    <div className="inline-flex w-full items-center border border-gray-400 text-gray-600 text-sm font-semibold mr-2 p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 mb-4">
+    <div className="inline-flex w-full items-center border border-gray-400 text-sm font-semibold mr-2 p-3 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 mb-4 bg-white dark:bg-slate-700">
       {icon && <span className="mr-2">{icon}</span>}
-      <span>{label}</span>
+      <span className='text-gray-600 dark:text-white'>{label}</span>
       {level && 
         <span className='ml-auto'>
         {

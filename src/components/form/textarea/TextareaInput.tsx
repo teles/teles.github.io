@@ -32,7 +32,7 @@ const TextareaInput: React.FC<TextareaInputProps> = ({ label, value, name, onCha
         onFocus={handleFocus}
         name={name}
         onBlur={handleBlur}
-        className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="block w-full px-4 py-2 border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 dark:text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         rows={4}
       />
       <label

@@ -16,15 +16,15 @@ interface TextToIconProps {
 }
 
 export const iconMap: Record<string, React.ReactNode> = {
-    Star: <FaStar />,
-    LinkedIn: <FaLinkedin />,
-    Home: <FaHome />,
-    GitHub: <FaGithub />,
-    NPM: <FaNpm />,
-    DevTo: <FaDev />,
-    CodePen: <FaCodepen />,
-    Moon: <FaMoon />,
-    Sun: <FaSun />
+  Star: <FaStar />,
+  LinkedIn: <FaLinkedin />,
+  Home: <FaHome />,
+  GitHub: <FaGithub />,
+  NPM: <FaNpm />,
+  DevTo: <FaDev />,
+  CodePen: <FaCodepen />,
+  Moon: <FaMoon />,
+  Sun: <FaSun />
 } as const
 
 const TextToIcon: React.FC<TextToIconProps> = ({ icon, className = '' }) => {

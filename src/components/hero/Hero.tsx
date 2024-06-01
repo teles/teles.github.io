@@ -32,7 +32,7 @@ export interface HeroProps {
  */
 const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center w-full">
+    <div className="flex flex-col md:flex-row items-center w-full bg-white dark:bg-slate-900">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <div className="relative h-80 rounded-lg">
           <Image
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
         </div>
       </div>
       <div className="w-full md:w-1/2 md:pl-6">
-        <ReactMarkdown className="prose">{markdownText}</ReactMarkdown>
+        <ReactMarkdown className="prose dark:prose-invert">{markdownText}</ReactMarkdown>
         {callToAction && (
           <>            
             <a

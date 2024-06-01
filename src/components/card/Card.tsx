@@ -19,7 +19,7 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
   return (
-    <div className="flex flex-col rounded-xl border-gray-200 border overflow-hidden shadow-md grow">
+    <div className="flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow">
       <div className="relative h-48">
         <Image
           src={image.src}
@@ -28,10 +28,10 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
           objectFit="contain"
         />
       </div>
-      <div className="flex flex-col px-6 pt-6 pb-8 border-t border-gray-200 grow">
+      <div className="flex flex-col px-6 pt-6 pb-8 border-t border-gray-200 dark:border-slate-600 grow dark:bg-slate-800">
         <div className="flex items-center my-2">
           {icon && <div className="mr-2">{icon}</div>}
-          <h2 className="font-bold text-xl">
+          <h2 className="font-bold text-xl dark:text-white">
             {link ? (
               <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target='_blank'>
                 {title}
@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
           </h2>
           {subtitle && <p className="text-gray-600 text-base ml-2 block">{subtitle}</p>}
         </div>
-        <p className="text-gray-600 text-base my-4">{text}</p>
+        <p className="text-gray-600 dark:text-slate-300 text-base my-4">{text}</p>
         <div className="flex flex-wrap gap-y-2 mt-auto">
           {tags.map((tag, index) => (
             <Tag key={index} label={tag} />

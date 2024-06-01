@@ -47,7 +47,7 @@
                 "markdownText": "# 👋 Hello, my name is Teles.\nI am a **Creative Software Engineer** with over 11 years of experience in web development, focused on frontend technologies, and proficient in **JavaScript**, **TypeScript**, **Node**, **Python**, and more.\n\nMy work is dedicated to **SEO** and **UX**, and the products I've worked on have reached millions of users in Brazil, as well as numerous startup founders.",
                 "callToAction": {
                   "text": "Connect with me",
-                  "link": "https://www.linkedin.com/in/jotateles/"
+                  "link": "https://www.linkedin.com/in/telesdev/"
                 }
               }
             }
@@ -102,25 +102,11 @@
                             ["AngularJS", 5],
                             ["Tailwind", 5],
                             ["SEO", 4],
-                            ["UX", 5]                            
-                          ]
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "title": "Soft Skills",
-                    "components": [
-                      {
-                        "type": "PillList",
-                        "props": {
-                          "pills": [
-                            ["Creativity", 5],
-                            ["Leadership", 4],
-                            ["Teamwork", 5],
-                            ["Problem Solving", 4],
-                            ["Communication", 4],
-                            ["Empathy", 5]                            
+                            ["Markdown", 5],
+                            ["SVG", 5],
+                            ["Accessibility", 3],
+                            ["UX", 5],
+                            ["Jest", 4]
                           ]
                         }
                       }
@@ -141,10 +127,37 @@
                             ["Rest API", 4],
                             ["Prisma", 4],
                             ["Alpine JS", 3],
-                            ["WordPress", 4]
+                            ["WordPress", 4],
+                            ["PyTest", 4]
                           ]
                         }
                       }                     
+                    ]
+                  },                  
+                  {
+                    "title": "Soft Skills +",
+                    "components": [
+                      {
+                        "type": "PillList",
+                        "props": {
+                          "pills": [
+                            ["Creativity", 5],
+                            ["Leadership", 4],
+                            ["Teamwork", 5],
+                            ["Problem Solving", 4],
+                            ["Communication", 4],
+                            ["Empathy", 5],
+                            ["Clean Code", 5],
+                            ["TDD", 4],
+                            ["Git", 5],
+                            ["Versioning", 5],
+                            ["CI/CD", 4],
+                            ["Agile", 4],
+                            ["Scrum", 4],
+                            ["Kanban", 4]
+                          ]
+                        }
+                      }
                     ]
                   }
                 ]

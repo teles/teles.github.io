@@ -11,19 +11,12 @@
       "site_name": "Teles Portfolio",
       "images": [
         {
-          "url": "https://teles.dev.br/og-image.jpg",
+          "url": "https://teles.dev.br/images/ogimage.png",
           "width": 1200,
           "height": 630,
           "alt": "Teles - Creative Software Engineer"
         }
       ]
-    },
-    "twitter": {
-      "card": "summary_large_image",
-      "site": "@your_twitter_handle",
-      "title": "Teles - Creative Software Engineer",
-      "description": "Creative Software Engineer with over 11 years of experience in web development, focused on frontend technologies, and proficient in JavaScript, TypeScript, Node, Python, and more. Dedicated to SEO and UX, and have worked on products reaching millions of users in Brazil and numerous startup founders.",
-      "image": "https://your-website-url.com/twitter-image.jpg"
     }
   },
   "sections": [

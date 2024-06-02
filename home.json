@@ -216,7 +216,7 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "/images/holy-sheets.png",
+                  "src": "/images/holysheets.png",
                   "width": 358,
                   "height": 192,
                   "alt": "Teles' avatar drawn by github.com/teles"
@@ -264,12 +264,12 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "src": "/images/readme-converter.png",
                   "width": 616,
                   "height": 320
                 },                
-                "title": "Awesome Parser Action",
-                "link": "https://github.com/teles/awesome-parser-action",
+                "title": "Readme Converter Action",
+                "link": "https://github.com/teles/readme-converter-action",
                 "text": "A GitHub Action that parses a markdown file and creates a JSON file with its content.",
                 "tags": [
                   "Shell Script",

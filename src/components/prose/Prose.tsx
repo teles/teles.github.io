@@ -1,5 +1,4 @@
-import ReactMarkdown from 'react-markdown'
-
+import Markdown from '../markdown/Markdown'
 interface ProseProps {
   text: string;
   size: 'xs' | 'sm' | 'base' |'md' | 'lg' | 'xl';
@@ -23,7 +22,7 @@ const  Prose: React.FC<ProseProps> = ({ text, size = 'base' }) => {
     xl: 'prose-xl dark:prose-invert'    
   }
   return (
-    <ReactMarkdown className={sizeToClasses[size]}>{text}</ReactMarkdown>
+    <Markdown className={sizeToClasses[size]}>{text}</Markdown>
   )
 }
 

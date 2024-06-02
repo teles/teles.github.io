@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ReactMarkdown from 'react-markdown'
+import Markdown from '../markdown/Markdown'
 
 interface LinkCloudsProps {
   logo?: {
@@ -23,7 +23,7 @@ const LinkClouds: React.FC<LinkCloudsProps> = ({ logo, text, linkColumns }) => {
     <div className='flex flex-col md:flex-row'>
         <div>
           { logo && <Image src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} /> }
-          { text && <ReactMarkdown className="prose dark:prose-invert mt-4">{text}</ReactMarkdown> }
+          { text && <Markdown className="prose dark:prose-invert mt-4">{text}</Markdown> }
         </div>
         <div className='flex grow w-full gap-x-4 md:ml-12 mt-6 md:mt-0'>
             {linkColumns.map((links, index) => (
@@ -32,7 +32,7 @@ const LinkClouds: React.FC<LinkCloudsProps> = ({ logo, text, linkColumns }) => {
                     <ul>
                         {links.links.map((link, innerIdex) => (
                             <li key={innerIdex} className='mb-2'>
-                                <a href={link.url} target='_blank' className='dark:text-white'>{link.title}</a>
+                                <a href={link.url} target='_blank' className='dark:text-white dark:border-white border-b border-dotted pb-1 border-gray-600 transition'>{link.title}</a>
                             </li>
                         ))}
                     </ul> 

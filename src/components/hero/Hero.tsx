@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
+import Markdown from '../markdown/Markdown'
 import Image from 'next/image'
 import { iconMap } from '../textToIcon/TextToIcon'
 import TextToIcon from '../textToIcon/TextToIcon'
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
         </div>
       </div>
       <div className="w-full md:w-1/2 md:pl-6">
-        <ReactMarkdown className="prose dark:prose-invert">{markdownText}</ReactMarkdown>
+        <Markdown className="prose dark:prose-invert">{markdownText}</Markdown>
         {callToAction && (
           <>            
             <a

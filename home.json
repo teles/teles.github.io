@@ -486,7 +486,7 @@
       },
       "columns": [
         {
-          "width":"1/2",
+          "width":"full",
           "components": [
             {
               "type": "IconsBox",
@@ -512,45 +512,6 @@
                   {
                     "name": "NPM",
                     "link": "https://www.npmjs.com/~teles"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "width": "1/2",
-          "components": [
-            {
-              "type": "Formulary",
-              "props": {
-                "fields": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "label": "Name",
-                      "required": true
-                    }
-                  },
-                  {
-                    "type": "email",
-                    "props": {
-                      "label": "Email",
-                      "required": true
-                    }
-                  },
-                  {
-                    "type": "textarea",
-                    "props": {
-                      "label": "Message",
-                      "required": true
-                    }
-                  },
-                  {
-                    "type": "submit",
-                    "props": {
-                      "text": "Send"
-                    }
                   }
                 ]
               }
@@ -587,6 +548,10 @@
                       {
                         "title": "Download my resume",
                         "url": "https://drive.google.com/file/d/1Bi-exXSKFFxIwi5rf2kFj-EaIdGLpYdI/view?usp=sharing"
+                      },
+                      {
+                        "title": "Sponsor me on GitHub",
+                        "url": "https://github.com/sponsors/teles"
                       }
                     ]
                   }

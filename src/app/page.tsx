@@ -4,7 +4,6 @@ import PageRenderer, { Section } from "@/components/pageRenderer/PageRenderer"
 import configs from "../../home.json"
 import Header from "@/components/header/Header"
 
-
 export default function Home() {
   const { sections, footer } = configs as { sections: Section[], footer: Section[] }
   const [ isDarkMode, setDarkMode] = React.useState(false)

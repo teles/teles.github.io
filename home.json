@@ -286,7 +286,7 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "src": "/images/taildown.png",
                   "width": 616,
                   "height": 320
                 },                
@@ -310,7 +310,7 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "https://raw.githubusercontent.com/teles/array-mixer/main/.readme/images/logo.png",
+                  "src": "/images/awesome-seo.png",
                   "width": 616,
                   "height": 320
                 },                

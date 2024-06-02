@@ -192,7 +192,7 @@
               "type": "Card",
               "props": {
                 "image": {
-                  "src": "/images/teles-min.png",
+                  "src": "/images/teles-circle.svg",
                   "width": 616,
                   "height": 320,
                   "alt": "Teles' avatar drawn by github.com/teles"

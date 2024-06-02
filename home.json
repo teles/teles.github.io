@@ -557,6 +557,10 @@
                       {
                         "title": "Share this page on LinkedIn",
                         "url": "https://www.linkedin.com/sharing/share-offsite/?url=teles.dev.br"
+                      },
+                      {
+                        "title": "Report an issue",
+                        "url": "https://github.com/teles/teles.github.io/issues"
                       }
                     ]
                   }

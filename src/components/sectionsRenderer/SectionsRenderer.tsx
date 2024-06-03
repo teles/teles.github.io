@@ -64,9 +64,9 @@ const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
   }
 
   return (
-    <div>
+    <>
       {sections.map((section, sectionIndex) => (
-        <section key={sectionIndex} className={"container mx-auto "+sizesBottomMap[section?.container?.bottom ?? 'none']+" px-6 flex flex-col md:flex-row flex-wrap border-box " + sizesTopMap[section?.container?.top ?? 'none']}>
+        <section key={sectionIndex} className={"container max-w-[1200px] mx-auto "+sizesBottomMap[section?.container?.bottom ?? 'none']+" px-6 flex flex-col md:flex-row flex-wrap border-box " + sizesTopMap[section?.container?.top ?? 'none']}>
           {section.columns.map((column, columnIndex) => (            
             <div key={columnIndex} className={widthMap[column.width ?? 'full'] + ' pb-4 pr-4 md:pb-6 md:pr-6 flex flex-col'}>
               {column.components.map((component, componentIndex) => {
@@ -79,7 +79,7 @@ const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
           ))}
         </section>
       ))}
-    </div>
+    </>
   )
 }
 

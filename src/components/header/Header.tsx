@@ -22,8 +22,8 @@ interface HeaderProps {
  */
 const Header: React.FC<HeaderProps> = ({ title, toggleDarkMode, isDarkMode }) => {
   return (
-    <header className={`px-1 py-1 md:px-3 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10 min-h-11`}>
-      <div className="flex items-center">
+    <header className={`flex px-3 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10 min-h-11`}>
+      <div className="flex items-center w-full">
         <FaHome className="text-base text-gray-800 dark:text-white mr-3" />
         <p className="text-base text-gray-800 dark:text-white font-semibold">{title}</p>
         <span className="inline-block ml-auto cursor-pointer" onClick={() => toggleDarkMode()}>

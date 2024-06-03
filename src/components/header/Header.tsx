@@ -10,11 +10,20 @@ interface HeaderProps {
   isDarkMode: boolean;
 }
 
+/**
+ * Represents the header component of the application.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.title - The title of the header.
+ * @param {Function} props.toggleDarkMode - The function to toggle dark mode.
+ * @param {boolean} props.isDarkMode - A boolean indicating whether dark mode is enabled.
+ * @returns {JSX.Element} The rendered header component.
+ */
 const Header: React.FC<HeaderProps> = ({ title, toggleDarkMode, isDarkMode }) => {
-
   return (
-    <header className={`px-2 py-1 md:px-4 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10`}>
-      <div className="container mx-auto px-6 flex items-center">
+    <header className={`px-1 py-1 md:px-3 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10 min-h-11`}>
+      <div className="flex items-center">
         <FaHome className="text-base text-gray-800 dark:text-white mr-3" />
         <p className="text-base text-gray-800 dark:text-white font-semibold">{title}</p>
         <span className="inline-block ml-auto cursor-pointer" onClick={() => toggleDarkMode()}>

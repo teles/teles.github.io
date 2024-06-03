@@ -1,6 +1,6 @@
 "use client"
 import React from "react"
-import page from "../../home.json"
+import page from "../content/home.json"
 import PageRenderer from "@/components/pageRenderer/PageRenderer"
 import { Section } from "@/components/sectionsRenderer/SectionsRenderer"
 

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Tab from '../tab/Tab'
+import ComponentsMap from '@/lib/ComponentsMap'
 
 interface ComponentProps {
   type: string;
@@ -16,19 +17,6 @@ interface TabData {
 
 export interface TabListProps {
   tabs: TabData[];
-}
-
-const componentMap: Record<string, React.ElementType> = {
-  Heading: React.lazy(() => import('../heading/Heading')),
-  Hero: React.lazy(() => import('../hero/Hero')),
-  Tag: React.lazy(() => import('../tag/Tag')),
-  Card: React.lazy(() => import('../card/Card')),
-  Button: React.lazy(() => import('../button/Button')),
-  TabList: React.lazy(() => import('../tabList/TabList')),
-  Tab: React.lazy(() => import('../tab/Tab')),
-  Pill: React.lazy(() => import('../pill/Pill')),
-  PillList: React.lazy(() => import('../pillList/PillList')),
-  Box: React.lazy(() => import('../box/Box'))
 }
 
 const TabList: React.FC<TabListProps> = ({ tabs }) => {
@@ -49,7 +37,7 @@ const TabList: React.FC<TabListProps> = ({ tabs }) => {
       </div>
       <div className="p-4">
         {tabs[activeTab].components.map((component, index) => {
-          const Component = componentMap[component.type]
+          const Component = ComponentsMap[component.type]
           return <Component key={index} {...component.props} />
         })}
       </div>

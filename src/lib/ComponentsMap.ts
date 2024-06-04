@@ -11,13 +11,14 @@ const ComponentsMap: Record<string, React.ElementType> = {
   IconsBox: React.lazy(() => import('../components/iconsBox/IconsBox')),
   Image: React.lazy(() => import('../components/imageComponent/ImageComponent')),
   LinkClouds: React.lazy(() => import('../components/linkClouds/LinkClouds')),
+  Panel: React.lazy(() => import('../components/panel/Panel')),
   Pill: React.lazy(() => import('../components/pill/Pill')),
   PillList: React.lazy(() => import('../components/pillList/PillList')),
   Prose: React.lazy(() => import('../components/prose/Prose')),
   Ruler: React.lazy(() => import('../components/ruler/Ruler')),
   Tab: React.lazy(() => import('../components/tab/Tab')),
   TabList: React.lazy(() => import('../components/tabList/TabList')),
-  Tag: React.lazy(() => import('../components/tag/Tag'))
+  Tag: React.lazy(() => import('../components/tag/Tag'))  
 }
 
 export default ComponentsMap

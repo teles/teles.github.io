@@ -20,25 +20,30 @@
       ]
     }
   },
+  "container": {
+    "bottom": "none",
+    "top": "none"
+  },
   "sections": [
     {
       "container": {
-        "bottom": "md"
+        "bottom": "md",
+        "fullWidth": true
       },
       "columns": [
         {
           "width": "full",
           "components": [
             {
-              "type": "Heading",
+              "type": "Panel",
               "props": {
-                "level": 2,
-                "text": "👨‍💻 Projects"
+                "char": "👨‍💻",
+                "title": "Projects"
               }
             }
           ]
         }
-      ]      
+      ]
     },
     {
       "container": {

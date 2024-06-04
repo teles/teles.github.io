@@ -20,6 +20,10 @@
       ]
     }
   },
+  "container": {
+    "bottom": "md",
+    "top": "md"
+  },
   "sections": [
     {
       "container": {

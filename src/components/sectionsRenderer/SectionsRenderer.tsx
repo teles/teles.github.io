@@ -8,17 +8,17 @@ interface ComponentProps {
 
 type ColumnWidth = '1/2' | '1/3' | '2/3' | '1/4' | '3/4' | '1/5' | '2/5' | '3/5' | '4/5' | '1/6' | '5/6' | 'full'
 
-interface Column {  
+interface Column {
   width?: ColumnWidth;
   components: ComponentProps[];
 }
-type Sizes = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+
+export type Sizes = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 interface SectionContainer {
   top?: Sizes;
-  right?: Sizes;
   bottom?: Sizes;
-  left?: Sizes;
+  fullWidth?: boolean;
 }
 
 export interface Section {
@@ -66,9 +66,9 @@ const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
   return (
     <>
       {sections.map((section, sectionIndex) => (
-        <section key={sectionIndex} className={"container max-w-[1200px] mx-auto "+sizesBottomMap[section?.container?.bottom ?? 'none']+" px-6 flex flex-col md:flex-row flex-wrap border-box " + sizesTopMap[section?.container?.top ?? 'none']}>
-          {section.columns.map((column, columnIndex) => (            
-            <div key={columnIndex} className={widthMap[column.width ?? 'full'] + ' pb-4 pr-4 md:pb-6 md:pr-6 flex flex-col'}>
+        <section key={sectionIndex} className={`mx-auto ${sizesBottomMap[section?.container?.bottom ?? 'none']} flex flex-col md:flex-row flex-wrap border-box ${sizesTopMap[section?.container?.top ?? 'none']} ${section.container?.fullWidth ? 'w-full' : 'container max-w-[1200px] px-6'}`}>
+          {section.columns.map((column, columnIndex) => (
+            <div key={columnIndex} className={`${widthMap[column.width ?? 'full']} ${section.container?.fullWidth ? '' : 'pb-4 pr-4 md:pb-6 md:pr-6'} flex flex-col`}>
               {column.components.map((component, componentIndex) => {
                 const Component = ComponentsMap[component.type]
                 return Component ? (

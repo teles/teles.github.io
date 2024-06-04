@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ComponentsMap: Record<string, React.ElementType> = {
+  Billboard: React.lazy(() => import('../components/billboard/Billboard')),
   Box: React.lazy(() => import('../components/box/Box')),
   Button: React.lazy(() => import('../components/button/Button')),
   Card: React.lazy(() => import('../components/card/Card')),
@@ -18,7 +19,8 @@ const ComponentsMap: Record<string, React.ElementType> = {
   Ruler: React.lazy(() => import('../components/ruler/Ruler')),
   Tab: React.lazy(() => import('../components/tab/Tab')),
   TabList: React.lazy(() => import('../components/tabList/TabList')),
-  Tag: React.lazy(() => import('../components/tag/Tag'))  
+  Tag: React.lazy(() => import('../components/tag/Tag')),
+  TagList: React.lazy(() => import('../components/tagList/TagList')),
 }
 
 export default ComponentsMap

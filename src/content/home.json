@@ -129,9 +129,9 @@
                             ["PyTest", 4]
                           ]
                         }
-                      }                     
+                      }
                     ]
-                  },                  
+                  },
                   {
                     "title": "Soft Skills +",
                     "components": [
@@ -183,7 +183,7 @@
             }
           ]
         }
-      ]      
+      ]
     },
     {
       "container": {
@@ -233,7 +233,7 @@
                   "TypeScript",
                   "NPM Library",
                   "Backend",
-                  "Google Sheets"                  
+                  "Google Sheets"
                 ]
               }
             }
@@ -258,7 +258,7 @@
                   "NPM Library",
                   "TypeScript"
                 ]
-              }              
+              }
             }
           ]
         },
@@ -272,7 +272,7 @@
                   "src": "/images/readme-converter.png",
                   "width": 616,
                   "height": 320
-                },                
+                },
                 "title": "Readme Converter Action",
                 "link": "https://github.com/teles/readme-converter-action",
                 "text": "A GitHub Action that parses a markdown file and creates a JSON file with its content.",
@@ -294,7 +294,7 @@
                   "src": "/images/taildown.png",
                   "width": 616,
                   "height": 320
-                },                
+                },
                 "title": "Taildown - Markdown editor",
                 "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
                 "link": "https://github.com/taildown/taildown.github.io",
@@ -318,7 +318,7 @@
                   "src": "/images/awesome-seo.png",
                   "width": 616,
                   "height": 320
-                },                
+                },
                 "title": "Awesome SEO",
                 "text": "Free list of projects, articles, and tools related to SEO.",
                 "link": "https://github.com/teles/awesome-seo",
@@ -354,7 +354,7 @@
     },
     {
       "columns": [
-        {          
+        {
           "width": "full",
           "components": [
             {
@@ -392,7 +392,7 @@
                   "Monitored the sales funnel via Google Analytics.",
                   "Migrated a WordPress blog with **SEO** techniques.",
                   "Developed a B2B application in WordPress Rest API, **Vue.js**, and **Nuxt**."
-                ]                
+                ]
               }
             }
           ]
@@ -447,7 +447,7 @@
                 "title": "FATEC São José dos Campos (2007 - 2010)",
                 "items": [
                   "Graduated in Database"
-                ]              
+                ]
               }
             }
           ]
@@ -482,7 +482,7 @@
               }
             }
           ]
-        }        
+        }
       ]
     },
     {
@@ -505,7 +505,7 @@
                   {
                     "name": "LinkedIn",
                     "link": "https://www.linkedin.com/in/telesdev/"
-                  },                  
+                  },
                   {
                     "name": "DevTo",
                     "link": "https://dev.to/teles"
@@ -534,7 +534,7 @@
           "components": [
             {
               "type": "LinkClouds",
-              "props": {                
+              "props": {
                 "logo": {
                   "src": "/images/teles-circle.svg",
                   "width": 80,
@@ -568,9 +568,9 @@
                       }
                     ]
                   }
-                ]                
+                ]
               }
-            }            
+            }
           ]
         }
       ]

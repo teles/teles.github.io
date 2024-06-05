@@ -15,6 +15,21 @@ const paths: Path[] = [
     route: 'projects',
     slugs: 'holysheets',
     path: '/src/content/projects/holysheets.mdx'
+  },
+  {
+    route: 'projects',
+    slugs: 'readme-converter-action',
+    path: '/src/content/projects/readme-converter-action.mdx'
+  },
+  {
+    route: 'projects',
+    slugs: 'awesome-seo',
+    path: '/src/content/projects/awesome-seo.mdx'
+  },
+  {
+    route: 'projects',
+    slugs: 'taildown',
+    path: '/src/content/projects/taildown.mdx'
   }
 ]
 

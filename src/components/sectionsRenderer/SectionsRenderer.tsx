@@ -62,7 +62,7 @@ const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
     'lg': 'mt-16 md:mt-20',
     'xl': 'mt-18 md:mt-32'
   }
-  console.log(sections)
+
   return (
     <>
       {sections.map((section, sectionIndex) => (

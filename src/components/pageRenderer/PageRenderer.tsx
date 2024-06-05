@@ -29,7 +29,7 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections, footer, container
     'lg': 'py-16 md:py-24',
     'xl': 'py-20 md:py-32'
   }
-
+  console.log({sections})
   return (
     <div className={`bg-white dark:bg-slate-900 ${isDarkMode ? 'dark' : ''}`}>
       <Header title="Teles" toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />

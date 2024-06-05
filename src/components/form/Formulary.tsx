@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Button from '../button/Button'
-import TextInput from './input/TextInput'
-import TextArea from './textarea/TextareaInput'
+import Button from '@/components/button/Button'
+import TextInput from '@/components/form/input/TextInput'
+import TextArea from '@/components/form/textarea/TextareaInput'
 
 
 interface FormularyProps {

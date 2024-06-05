@@ -5,6 +5,8 @@ interface BillboardProps {
   image: {
     src: string;
     alt: string;
+    height: number;
+    width: number;
   };
 }
 
@@ -15,8 +17,8 @@ const Billboard: React.FC<BillboardProps> = ({ image }) => {
         className='max-w-full h-[390px] object-contain'
         src={image.src}
         alt={image.alt}
-        width={996}
-        height={390}
+        width={image.width}
+        height={image.height}
         objectFit="contain"
       />
     </Box>

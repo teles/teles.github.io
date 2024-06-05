@@ -19,7 +19,7 @@ const  Prose: React.FC<ProseProps> = ({ text, size = 'base' }) => {
     sm: 'prose-sm dark:prose-invert',
     md: 'prose dark:prose-invert',
     lg: 'prose-lg dark:prose-invert',
-    xl: 'prose-xl dark:prose-invert'    
+    xl: 'prose-xl dark:prose-invert'
   }
   return (
     <Markdown className={sizeToClasses[size]}>{text}</Markdown>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Markdown from '../markdown/Markdown'
+import Markdown from '@/components/markdown/Markdown'
 
 interface FlatListProps {
   title: string

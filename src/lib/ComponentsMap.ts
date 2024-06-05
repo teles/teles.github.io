@@ -1,6 +1,7 @@
 import React from 'react'
 
 const ComponentsMap: Record<string, React.ElementType> = {
+  Article: React.lazy(() => import('../components/article/Article')),
   Billboard: React.lazy(() => import('../components/billboard/Billboard')),
   Box: React.lazy(() => import('../components/box/Box')),
   Button: React.lazy(() => import('../components/button/Button')),

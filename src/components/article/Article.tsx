@@ -10,6 +10,8 @@ interface ArticleProps {
   image: {
     src: string;
     alt: string;
+    height: number;
+    width: number;
   };
   content: string;
 }
@@ -17,11 +19,15 @@ interface ArticleProps {
 export default function Article({ title, tags, description, image, content }: ArticleProps) {
   return (
     <>
-      <h1>{title}</h1>
-      <Billboard image={image} />
-      <p>{description}</p>
+      <h1 className="text-4xl font-bold my-6 dark:text-white">{title}</h1>
+      <div className="mb-6">
+        <Billboard image={image} />
+      </div>
+      <p className="text-gray-600 mb-10 dark:text-white">{description}</p>
       <TagList tags={tags} />
-      <Ruler />
+      <div className="mt-6 mb-10">
+        <Ruler />
+      </div>
       <Prose text={content} size="base" />
     </>
   )

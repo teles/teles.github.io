@@ -2,6 +2,7 @@
 import React from "react"
 import SectionsRenderer, { Section, Sizes } from "@/components/sectionsRenderer/SectionsRenderer"
 import Header from "@/components/header/Header"
+import { Breadcrumb } from "@/lib/breadcrumbs/Breadcrumbs.types"
 
 export interface PageContainer {
   bottom?: Sizes;
@@ -12,9 +13,10 @@ interface PageRendererProps {
   sections: Section[];
   footer: Section[];
   container: PageContainer;
+  breadcrumbs?: Breadcrumb[];
 }
 
-const PageRenderer: React.FC<PageRendererProps> = ({ sections, footer, container }) => {
+const PageRenderer: React.FC<PageRendererProps> = ({ sections, footer, container, breadcrumbs }) => {
   const [isDarkMode, setDarkMode] = React.useState(false)
 
   const toggleDarkMode = () => {
@@ -32,7 +34,7 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections, footer, container
 
   return (
     <div className={`bg-white dark:bg-slate-900 ${isDarkMode ? 'dark' : ''}`}>
-      <Header title="Teles" toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} breadcrumbs={breadcrumbs} />
       <main className={`min-h-screen m-auto bg-white dark:bg-slate-900 ${container?.bottom ? containerToClass[container.bottom] : ''} ${container?.top ? containerToClass[container.top] : ''}`}>
         <SectionsRenderer sections={sections} />
       </main>

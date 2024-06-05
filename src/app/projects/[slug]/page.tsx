@@ -55,8 +55,13 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     }
     const { footer } = Home as { footer: Section[] }
     const { content, frontmatter: project } = getContent<Project>(filePath)
-    console.log(project.skills)
+
     return (
-      <PageRenderer sections={[projectToSection(project, content)]} footer={footer} container={{}} />
+      <PageRenderer
+        breadcrumbs={[{title: "Home", href: "/"}, { title: "👨‍💻 Projects", href: "/projects" }, { title: project.title, href: "/projects/" + params.slug}]}
+        sections={[projectToSection(project, content)]}
+        footer={footer}
+        container={{}}
+      />
     )
 }

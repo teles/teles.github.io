@@ -9,6 +9,11 @@ export default function Home() {
   const { sections, footer, container } = page as { sections: Section[], footer: Section[], container: PageContainer }
 
   return (
-    <PageRenderer sections={sections} footer={footer} container={container} />
+    <PageRenderer
+      sections={sections}
+      footer={footer}
+      container={container}
+      breadcrumbs={[{title: "Teles", href: "/"}]}
+    />
   )
 }

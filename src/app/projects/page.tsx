@@ -9,6 +9,11 @@ export default function Projects() {
   const { sections, footer, container } = page as { sections: Section[], footer: Section[], container: PageContainer }
 
   return (
-    <PageRenderer sections={sections} footer={footer} container={container} />
+    <PageRenderer
+      breadcrumbs={[{title: "Home", href: "/"}, { title: "👨‍💻 Projects", href: "/projects" }]}
+      sections={sections}
+      footer={footer}
+      container={container}
+    />
   )
 }

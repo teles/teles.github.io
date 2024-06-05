@@ -178,7 +178,11 @@
               "type": "Heading",
               "props": {
                 "level": 2,
-                "text": "👨‍💻 Projects"
+                "text": "👨‍💻 Projects",
+                "link": {
+                    "text": "See all →",
+                  "href": "/projects"
+                }
               }
             }
           ]

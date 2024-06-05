@@ -18,6 +18,7 @@ export interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
+  const target = (href: string) => href.startsWith('/') ? '_self' : '_blank'
   return (
     <div className="flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow">
       <div className="relative h-48">
@@ -33,11 +34,11 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
           {icon && <div className="mr-2">{icon}</div>}
           <h2 className="font-bold text-xl dark:text-white">
             {link ? (
-              <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target='_blank'>
+              <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target={target(link)}>
                 {title}
               </a>
             ) : (
-              title            
+              title
             )}
           </h2>
           {subtitle && <p className="text-gray-600 text-base ml-2 block">{subtitle}</p>}

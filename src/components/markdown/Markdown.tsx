@@ -7,7 +7,8 @@ interface MarkdownProps {
 
 const LinkRenderer = ({ href, children }: any): JSX.Element => {
   if (href) {
-    return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+    const target = href.startsWith('/') ? '_self' : '_blank'
+    return <a href={href} target={target} rel="noopener noreferrer">{children}</a>
   } else {
     return <a target="_blank" rel="noopener noreferrer">{children}</a>
   }

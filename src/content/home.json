@@ -301,7 +301,7 @@
                 },
                 "title": "Taildown - Markdown editor",
                 "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
-                "link": "https://github.com/taildown/taildown.github.io",
+                "link": "/projects/taildown",
                 "tags": [
                   "Tailwind CSS",
                   "Markdown",
@@ -325,7 +325,7 @@
                 },
                 "title": "Awesome SEO",
                 "text": "Free list of projects, articles, and tools related to SEO.",
-                "link": "https://github.com/teles/awesome-seo",
+                "link": "/projects/awesome-seo",
                 "tags": [
                   "SEO",
                   "Awesome List",

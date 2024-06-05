@@ -29,7 +29,10 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode, breadcrumbs
         <ul>
           {breadcrumbs?.map((breadcrumb, index) => (
             <li key={index} className="inline-block">
-              <a href={breadcrumb.href} className="text-sm text-gray-800 dark:text-white font-normal hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-1">{breadcrumb.title}</a>
+              <a href={breadcrumb.href} className="text-sm text-gray-800 dark:text-white font-normal hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-1" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <span itemProp="name">{breadcrumb.title}</span>
+                <meta itemProp="position" content={(index + 1).toString()} />
+              </a>
               {index < breadcrumbs.length - 1 && <span className="mx-1 text-gray-400 dark:text-slate-500">/</span>}
             </li>
           ))}

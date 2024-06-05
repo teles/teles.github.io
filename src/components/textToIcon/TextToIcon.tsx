@@ -1,9 +1,10 @@
-import { 
-  FaGithub, 
-  FaHome, 
-  FaLinkedin, 
-  FaNpm, 
-  FaStar, 
+import {
+  FaGithub,
+  FaHome,
+  FaLinkedin,
+  FaLink,
+  FaNpm,
+  FaStar,
   FaDev,
   FaCodepen,
   FaMoon,
@@ -24,7 +25,8 @@ export const iconMap: Record<string, React.ReactNode> = {
   DevTo: <FaDev />,
   CodePen: <FaCodepen />,
   Moon: <FaMoon />,
-  Sun: <FaSun />
+  Sun: <FaSun />,
+  Link: <FaLink />
 } as const
 
 const TextToIcon: React.FC<TextToIconProps> = ({ icon, className = '' }) => {

@@ -20,6 +20,11 @@ interface Project {
     group: string;
     items: string[];
   }
+  links?: {
+    href: string;
+    source: 'GitHub' | 'NPM' | 'DevTo'
+    text: string;
+  }[]
 }
 
 const projectToSection = (project: Project, content: string) : Section => {
@@ -38,7 +43,8 @@ const projectToSection = (project: Project, content: string) : Section => {
                 "alt": project.title
               },
               "content": content,
-              "skills": project.skills
+              "skills": project.skills,
+              "links": project.links
             }
           }
         ]

@@ -11,6 +11,7 @@ const ComponentsMap: Record<string, React.ElementType> = {
   Heading: React.lazy(() => import('../components/heading/Heading')),
   Hero: React.lazy(() => import('../components/hero/Hero')),
   IconsBox: React.lazy(() => import('../components/iconsBox/IconsBox')),
+  InlineLinks: React.lazy(() => import('../components/inlineLinks/InlineLinks')),
   Image: React.lazy(() => import('../components/imageComponent/ImageComponent')),
   LinkClouds: React.lazy(() => import('../components/linkClouds/LinkClouds')),
   Panel: React.lazy(() => import('../components/panel/Panel')),

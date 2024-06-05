@@ -1,0 +1,79 @@
+---
+title: Array Mixer
+tags:
+- TypeScript
+- Library
+- NPM
+description: ArrayMixer is a lightweight JavaScript library (under 1KB) that enables custom ordering of multiple arrays effortlessly, perfect for Node.js and web projects. Easy, flexible, and powerful.
+links:
+  - source: GitHub
+    href: https://github.com/teles/array-mixer
+  - source: NPM
+    href: https://www.npmjs.com/package/array-mixer
+image:
+  src: /images/array-mixer.png
+  alt: Array Mixer
+  width: 800
+  height: 400
+skills:
+  - TypeScript
+  - Jest
+  - Node.js
+  - NPM
+---
+
+
+### Discover the Power of ArrayMixer: The JavaScript Library for Custom Array Ordering
+
+In the programming world, handling and ordering arrays can be a tedious and repetitive task. This is where **ArrayMixer** comes in, a lightweight and powerful JavaScript library, under 1KB, designed to simplify the organization of array groups in a highly customized manner. Whether for Node.js or web projects, ArrayMixer offers an efficient and easy-to-use solution for your ordering needs.
+
+#### Key Features
+
+**Incredible Flexibility:** With only two mandatory parameters, `aliases` and `sequence`, you can create complex combinations of arrays intuitively. Define aliases for your arrays and create display sequences as needed.
+
+**Easy to Use:** The simplicity of ArrayMixer is one of its greatest advantages. With a single line of code, you can mix arrays of photos, ads, texts, links, songs, and more, following specific patterns.
+
+**Practical Examples:** The library comes with several examples illustrating how to use it in different scenarios, such as displaying ads after a certain number of photos, including images in text paragraphs, or organizing sponsored links within lists.
+
+#### Usage Examples
+
+1. **Display Ads Among Photos:**
+   ```javascript
+   const mixedArray = ArrayMixer({P: photos, A: ads}, ["2P", "1A"]);
+   ```
+
+2. **Include Images in Texts:**
+   ```javascript
+   ArrayMixer({P: paragraphs, I: images}, ["4P", "2I"]);
+   ```
+
+3. **Organize Sponsored Links:**
+   ```javascript
+   ArrayMixer({R: related, S: sponsored}, ["4R", "2S", "2R"]);
+   ```
+
+#### Installation
+
+**For Node Projects:**
+```bash
+npm install array-mixer --save
+```
+
+**Import:**
+```javascript
+const ArrayMixer = require("array-mixer");
+```
+
+**For Web Projects:**
+Download the ES5 transpiled version of ArrayMixer and include it in your HTML:
+```html
+<script src="https://unpkg.com/array-mixer@0.7.2/release/array-mixer.js"></script>
+```
+
+#### Contribution and License
+
+ArrayMixer is an open-source project licensed under the MIT License. Contributions are welcome! Check the contribution section in the repository to learn how to help.
+
+---
+
+Discover the power of **ArrayMixer** and transform the way you organize and manipulate arrays in your JavaScript projects. For more information, detailed examples, and source code, visit the [ArrayMixer GitHub repository](https://github.com/teles/array-mixer).

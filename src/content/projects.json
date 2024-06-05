@@ -62,7 +62,7 @@
                   "alt": "Teles' avatar drawn by github.com/teles"
                 },
                 "title": "Personal Website",
-                "link": "https://github.com/teles/teles.github.io",
+                "link": "/projects/personal-website",
                 "text": "My personal website, portfolio, and blog. Built with Next.js, Tailwind CSS, and MDX.",
                 "tags": [
                   "React",
@@ -86,7 +86,7 @@
                   "alt": "Teles' avatar drawn by github.com/teles"
                 },
                 "title": "HolySheets!",
-                "link": "https://holy-sheets.github.io/",
+                "link": "/project/holysheets",
                 "text": "A Google Sheets add-on that helps you manage your spreadsheets with ease.",
                 "tags": [
                   "TypeScript",
@@ -110,7 +110,7 @@
                   "height": 320
                 },
                 "title": "Array Mixer",
-                "link": "https://teles.dev.br/array-mixer/",
+                "link": "/projects/array-mixer",
                 "text": "A simple and lightweight library to shuffle arrays in JavaScript.",
                 "tags": [
                   "JavaScript",
@@ -133,7 +133,7 @@
                   "height": 320
                 },
                 "title": "Readme Converter Action",
-                "link": "https://github.com/teles/readme-converter-action",
+                "link": "/projects/readme-converter-action",
                 "text": "A GitHub Action that parses a markdown file and creates a JSON file with its content.",
                 "tags": [
                   "Shell Script",
@@ -156,7 +156,7 @@
                 },
                 "title": "Taildown - Markdown editor",
                 "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
-                "link": "https://github.com/taildown/taildown.github.io",
+                "link": "/projects/taildown",
                 "tags": [
                   "Tailwind CSS",
                   "Markdown",
@@ -180,7 +180,7 @@
                 },
                 "title": "Awesome SEO",
                 "text": "Free list of projects, articles, and tools related to SEO.",
-                "link": "https://github.com/teles/awesome-seo",
+                "link": "/projects/awesome-seo",
                 "tags": [
                   "SEO",
                   "Awesome List",

@@ -10,7 +10,7 @@ export default function Projects() {
 
   return (
     <PageRenderer
-      breadcrumbs={[{title: "Home", href: "/"}, { title: "👨‍💻 Projects", href: "/projects" }]}
+      breadcrumbs={[{ title: "👨‍💻 Projects", href: "/projects" }]}
       sections={sections}
       footer={footer}
       container={container}

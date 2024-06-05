@@ -3,6 +3,7 @@
 import React from "react"
 import TextToIcon from "../textToIcon/TextToIcon"
 import { Breadcrumb } from "@/lib/breadcrumbs/Breadcrumbs.types"
+import Configs from "@/.resumin.config.json"
 
 interface HeaderProps {
   toggleDarkMode: () => void;
@@ -21,6 +22,7 @@ interface HeaderProps {
  * @returns {JSX.Element} The rendered header component.
  */
 const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode, breadcrumbs }) => {
+  breadcrumbs = breadcrumbs ? [{ title: Configs.title, href: '/' }, ...breadcrumbs] : [{ title: Configs.title, href: '/' }]
   return (
     <header className={`flex px-3 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10 min-h-11`}>
       <div className="flex items-center w-full">

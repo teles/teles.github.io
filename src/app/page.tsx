@@ -13,7 +13,6 @@ export default function Home() {
       sections={sections}
       footer={footer}
       container={container}
-      breadcrumbs={[{title: "Teles", href: "/"}]}
     />
   )
 }

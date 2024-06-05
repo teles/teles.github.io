@@ -22,7 +22,7 @@ const  Prose: React.FC<ProseProps> = ({ text, size = 'base' }) => {
     xl: 'prose-xl dark:prose-invert'
   }
   return (
-    <Markdown className={sizeToClasses[size]}>{text}</Markdown>
+    <Markdown className={sizeToClasses[size] + ' max-w-full'}>{text}</Markdown>
   )
 }
 

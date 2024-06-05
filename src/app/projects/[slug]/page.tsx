@@ -16,6 +16,10 @@ interface Project {
   tags: string[];
   description: string;
   image: string;
+  skills?: {
+    group: string;
+    items: string[];
+  }
 }
 
 const projectToSection = (project: Project, content: string) : Section => {
@@ -33,7 +37,8 @@ const projectToSection = (project: Project, content: string) : Section => {
                 "src": project.image,
                 "alt": project.title
               },
-              "content": content
+              "content": content,
+              "skills": project.skills
             }
           }
         ]
@@ -50,7 +55,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
     }
     const { footer } = Home as { footer: Section[] }
     const { content, frontmatter: project } = getContent<Project>(filePath)
-
+    console.log(project.skills)
     return (
       <PageRenderer sections={[projectToSection(project, content)]} footer={footer} container={{}} />
     )

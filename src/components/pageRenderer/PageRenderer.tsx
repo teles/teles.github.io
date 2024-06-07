@@ -28,7 +28,7 @@ const PageRenderer: React.FC<PageRendererProps> = ({ sections, footer, container
   }
 
   return (
-    <div className={`bg-white dark:bg-slate-900}`}>
+    <div className={`bg-white dark:bg-slate-900`}>
       <Header breadcrumbs={breadcrumbs} />
       <main className={`min-h-screen m-auto bg-white dark:bg-slate-900 ${container?.bottom ? containerToClass[container.bottom] : ''} ${container?.top ? containerToClass[container.top] : ''}`}>
         <SectionsRenderer sections={sections} />

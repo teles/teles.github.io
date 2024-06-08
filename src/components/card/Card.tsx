@@ -15,12 +15,13 @@ export interface CardProps {
   text: string;
   tags: string[];
   link?: string;
+  className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link }) => {
+const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, link, className }) => {
   const target = (href: string) => href.startsWith('/') ? '_self' : '_blank'
   return (
-    <div className="flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow">
+    <div className={`flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow ${className}`}>
       <div className="relative h-48">
         <Image
           src={image.src}

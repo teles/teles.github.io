@@ -51,8 +51,8 @@ const projectToSection = (project: Project, content: string): Section => {
         ],
       },
     ],
-  };
-};
+  }
+}
 
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
     const filePath = paths.find((path) => path.slugs === params.slug)?.path

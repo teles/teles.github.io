@@ -1,12 +1,11 @@
 import React from 'react'
 import ComponentsMap from '@/lib/ComponentsMap'
+import Columns, { ColumnWidth } from '@/lib/Columns'
 
 interface ComponentProps {
   type: string;
   props: Record<string, unknown>;
 }
-
-type ColumnWidth = '1/2' | '1/3' | '2/3' | '1/4' | '3/4' | '1/5' | '2/5' | '3/5' | '4/5' | '1/6' | '5/6' | 'full'
 
 interface Column {
   width?: ColumnWidth;
@@ -31,20 +30,7 @@ interface SectionsRendererProps {
 }
 
 const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
-  const widthMap: Record<ColumnWidth, string> = {
-    '1/2': 'w-full md:w-1/2 lg:w-1/2 xl:w-1/2',
-    '1/3': 'w-full md:w-1/2 lg:w-1/3 xl:w-1/3',
-    '2/3': 'w-full md:w-2/3 lg:w-2/3 xl:w-2/3',
-    '1/4': 'w-full md:w-1/4 lg:w-1/4 xl:w-1/4',
-    '3/4': 'w-full md:w-3/4 lg:w-3/4 xl:w-3/4',
-    '1/5': 'w-full md:w-1/5 lg:w-1/5 xl:w-1/5',
-    '2/5': 'w-full md:w-2/5 lg:w-2/5 xl:w-2/5',
-    '3/5': 'w-full md:w-3/5 lg:w-3/5 xl:w-3/5',
-    '4/5': 'w-full md:w-4/5 lg:w-4/5 xl:w-4/5',
-    '1/6': 'w-full md:w-1/6 lg:w-1/6 xl:w-1/6',
-    '5/6': 'w-full md:w-5/6 lg:w-5/6 xl:w-5/6',
-    'full': 'w-full'
-  }
+
   const sizesBottomMap: Record<Sizes, string> = {
     'none': '',
     'xs': 'mb-4 md:mb-8',
@@ -68,7 +54,7 @@ const SectionsRenderer: React.FC<SectionsRendererProps> = ({ sections }) => {
       {sections.map((section, sectionIndex) => (
         <section key={sectionIndex} className={`mx-auto ${sizesBottomMap[section?.container?.bottom ?? 'none']} flex flex-col md:flex-row flex-wrap border-box ${sizesTopMap[section?.container?.top ?? 'none']} ${section.container?.fullWidth ? 'w-full' : 'container max-w-[1200px] px-6'}`}>
           {section.columns.map((column, columnIndex) => (
-            <div key={columnIndex} className={`${widthMap[column.width ?? 'full']} ${section.container?.fullWidth ? '' : 'pb-4 pr-4 md:pb-6 md:pr-6'} flex flex-col`}>
+            <div key={columnIndex} className={`${Columns[column.width ?? 'full']} ${section.container?.fullWidth ? '' : 'pb-4 pr-4 md:pb-6 md:pr-6'} flex flex-col`}>
               {column.components.map((component, componentIndex) => {
                 const Component = ComponentsMap[component.type]
                 return Component ? (

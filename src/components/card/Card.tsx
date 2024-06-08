@@ -26,8 +26,8 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
         <Image
           src={image.src}
           alt={image.alt}
-          layout="fill"
-          objectFit="contain"
+          fill
+          className='object-contain'
         />
       </div>
       <div className="flex flex-col px-6 pt-6 pb-8 border-t border-gray-200 dark:border-slate-600 grow dark:bg-slate-800">

@@ -38,15 +38,16 @@ const Hero: React.FC<HeroProps> = ({ image, markdownText, callToAction }) => {
           <Image
             src={image.src}
             alt={image.alt}
-            layout="fill"
-            objectFit="contain"
+            fill
+            priority
+            className='object-contain'
           />
         </div>
       </div>
       <div className="w-full md:w-1/2 md:pl-6">
         <Markdown className="prose dark:prose-invert">{markdownText}</Markdown>
         {callToAction && (
-          <>            
+          <>
             <a
               href={callToAction.link}
               target='_blank'

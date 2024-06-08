@@ -1,9 +1,11 @@
 import React from 'react'
 
+export type Level = 1 | 2 | 3 | 4 | 5
+
 export interface PillProps {
   label: string;
   icon?: React.ReactNode;
-  level?: 1 | 2 | 3 | 4 | 5;
+  level?: Level;
 }
 
 const Pill: React.FC<PillProps> = ({ label, icon, level }) => {

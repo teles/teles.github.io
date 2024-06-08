@@ -86,74 +86,87 @@
               "props": {
                 "tabs": [
                   {
-                    "title": "Frontend",
+                    "title": "Proficient",
                     "components": [
                       {
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            ["JavaScript", 5],
-                            ["CSS", 5],
-                            ["HTML", 5],
-                            ["TypeScript", 5],
-                            ["React", 5],
-                            ["Vue.js", 5],
-                            ["AngularJS", 5],
-                            ["Tailwind", 5],
-                            ["Markdown", 5],
-                            ["SVG", 5],
-                            ["Accessibility", 3],
-                            ["UX", 5],
-                            ["Jest", 4]
+                            "JavaScript",
+                            "TypeScript",
+                            "React",
+                            "Node.js",
+                            "NPM",
+                            "Creativity",
+                            "Vue.js",
+                            "Jest",
+                            "Tailwind",
+                            "Markdown",
+                            "Storybook",
+                            "Componentization",
+                            "UX",
+                            "SEO",
+                            "Git",
+                            "Versioning",
+                            "CI/CD",
+                            "Agile",
+                            "Nuxt",
+                            "Next",
+                            "Web Vitals",
+                            "Clean Code",
+                            "Teamwork"
                           ]
                         }
                       }
                     ]
                   },
                   {
-                    "title": "Backend",
+                    "title": "Intermediate",
                     "components": [
                       {
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            ["Node.js", 5],
-                            ["Python", 4],
-                            ["Django", 4],
-                            ["Nuxt", 4],
-                            ["Next", 4],
-                            ["Rest API", 4],
-                            ["Prisma", 4],
-                            ["Alpine JS", 3],
-                            ["WordPress", 4],
-                            ["PyTest", 4]
+                            "AWS",
+                            "Python",
+                            "Django",
+                            "PyTest",
+                            "CyPress",
+                            "Test E2E",
+                            "Alpine JS",
+                            "Prisma",
+                            "Shell Script",
+                            "Linux",
+                            "Terraform",
+                            "Docker",
+                            "Gulp",
+                            "Hiring",
+                            "SVG",
+                            "WordPress Rest API",
+                            "Accessibility",
+                            "Vercel"
                           ]
                         }
                       }
                     ]
                   },
                   {
-                    "title": "Soft Skills +",
+                    "title": "Basic + Hobbies",
                     "components": [
                       {
                         "type": "PillList",
                         "props": {
                           "pills": [
-                            ["Creativity", 5],
-                            ["Leadership", 4],
-                            ["Teamwork", 5],
-                            ["Problem Solving", 4],
-                            ["Communication", 4],
-                            ["Empathy", 5],
-                            ["Clean Code", 5],
-                            ["TDD", 4],
-                            ["Git", 5],
-                            ["Versioning", 5],
-                            ["CI/CD", 4],
-                            ["SEO", 5],
-                            ["Agile", 4],
-                            ["Scrum", 4],
-                            ["Kanban", 4]
+                            "PHP",
+                            "Angular",
+                            "Node.js",
+                            "Express",
+                            "MongoDB",
+                            "Redis",
+                            "Reading Comics",
+                            "Watching Movies",
+                            "Writing poetry",
+                            "Cycling"
                           ]
                         }
                       }

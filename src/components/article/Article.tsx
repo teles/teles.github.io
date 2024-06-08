@@ -47,7 +47,7 @@ export default function Article({ title, tags, description, image, skills, conte
           <div className="mb-10">
             <Heading text="🧰 Tools and Technologies" level={3} />
           </div>
-          <PillList pills={skills.map(skill => [skill])} />
+          <PillList pills={skills} />
         </>
       )}
     </article>

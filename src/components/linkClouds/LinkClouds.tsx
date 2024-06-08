@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Markdown from '../markdown/Markdown'
+import Markdown from '@/components/markdown/Markdown'
 
 interface LinkCloudsProps {
   logo?: {
@@ -8,7 +8,7 @@ interface LinkCloudsProps {
     width: number;
     height: number;
   }
-  text?: string;    
+  text?: string;
   linkColumns: {
     title: string;
     links: {
@@ -16,7 +16,7 @@ interface LinkCloudsProps {
       url: string;
     }[];
   }[];
-}    
+}
 
 const LinkClouds: React.FC<LinkCloudsProps> = ({ logo, text, linkColumns }) => {
   return (
@@ -32,10 +32,10 @@ const LinkClouds: React.FC<LinkCloudsProps> = ({ logo, text, linkColumns }) => {
                     <ul>
                         {links.links.map((link, innerIdex) => (
                             <li key={innerIdex} className='mb-2'>
-                                <a href={link.url} target='_blank' className='dark:text-white dark:border-white border-b border-dotted pb-1 border-gray-600 transition'>{link.title}</a>
+                                <a href={link.url} target='_blank' className='dark:text-white dark:border-white border-b text-pinkish-500 hover:text-pinkish-600 border-pinkish-500 hover:border-pinkish-600 pb-1 transition'>{link.title}</a>
                             </li>
                         ))}
-                    </ul> 
+                    </ul>
                 </div>
             ))}
         </div>

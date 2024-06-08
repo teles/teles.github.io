@@ -1,10 +1,10 @@
 "use client"
 
-import React from "react"
+import React, { useEffect } from "react"
 import TextToIcon from "../textToIcon/TextToIcon"
 import { Breadcrumb } from "@/lib/breadcrumbs/Breadcrumbs.types"
 import Configs from "@/.resumin.config.json"
-import { useTheme } from '@/context/ThemeContext'
+import useDarkMode from '@fisch0920/use-dark-mode'
 
 interface HeaderProps {
   breadcrumbs?: Breadcrumb[];
@@ -19,8 +19,21 @@ interface HeaderProps {
  */
 const Header: React.FC<HeaderProps> = ({ breadcrumbs }) => {
   breadcrumbs = breadcrumbs ? [{ title: Configs.title, href: '/' }, ...breadcrumbs] : [{ title: Configs.title, href: '/' }]
-  const { theme, setTheme } = useTheme()
-  const toggleDarkMode = () => setTheme(theme === 'dark' ? 'light' : 'dark')
+  const [isDarkMode, setIsDarkMode] = React.useState<boolean>(false)
+
+  const darkMode = useDarkMode(undefined, {
+    classNameDark: 'dark',
+    classNameLight: 'light'
+  })
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+    darkMode.toggle()
+  }
+
+  useEffect(() => {
+    setIsDarkMode(darkMode.value)
+  }, [darkMode.value])
 
   return (
     <header className={`flex px-3 md:py-2 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-slate-800 sticky top-0 z-10 min-h-11`}>
@@ -36,11 +49,9 @@ const Header: React.FC<HeaderProps> = ({ breadcrumbs }) => {
             </li>
           ))}
         </ul>
-        <span className="inline-block ml-auto cursor-pointer" onClick={() => toggleDarkMode()}>
-          {theme === 'dark'
-            ? <TextToIcon icon="Moon" className="text-white" />
-            : <TextToIcon icon="Sun" className="text-yellow-500"/>
-          }
+        <span className="inline-block ml-auto cursor-pointer" onClick={toggleDarkMode}>
+          <TextToIcon icon="Moon" className="text-white hidden dark:block" />
+          <TextToIcon icon="Sun" className="text-yellow-500 block dark:hidden"/>
         </span>
       </div>
     </header>

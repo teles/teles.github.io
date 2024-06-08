@@ -13,6 +13,7 @@
     "storybook:build": "storybook build -o storybook"
   },
   "dependencies": {
+    "@fisch0920/use-dark-mode": "^2.4.0",
     "@mdx-js/loader": "^3.0.1",
     "@next/mdx": "^14.2.3",
     "@tailwindcss/typography": "^0.5.13",

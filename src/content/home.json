@@ -234,10 +234,10 @@
                   },
                   {
                     "image": {
-                      "src": "/images/holysheets.png",
-                      "width": 358,
+                      "src": "/images/logos/holysheets-card.svg",
+                      "width": 350,
                       "height": 192,
-                      "alt": "Teles' avatar drawn by github.com/teles"
+                      "alt": "Holysheets logo"
                     },
                     "title": "HolySheets!",
                     "link": "/projects/holysheets",
@@ -251,38 +251,42 @@
                   },
                   {
                     "image": {
-                      "src": "/images/array-mixer.png",
-                      "width": 616,
-                      "height": 320
+                      "src": "/images/logos/array-mixer-card.svg",
+                      "width": 350,
+                      "height": 192
                     },
                     "title": "Array Mixer",
                     "link": "/projects/array-mixer",
                     "text": "A simple and lightweight library to shuffle arrays in JavaScript.",
                     "tags": [
-                      "JavaScript",
-                      "NPM Library",
-                      "TypeScript"
+                      "TypeScript",
+                      "Jest",
+                      "Node.js",
+                      "NPM"
                     ]
                   },
                   {
                     "image": {
-                      "src": "/images/readme-converter.png",
-                      "width": 616,
-                      "height": 320
+                      "src": "/images/logos/readme-converter-card.svg",
+                      "width": 350,
+                      "height": 192
                     },
                     "title": "Readme Converter Action",
                     "link": "/projects/readme-converter-action",
                     "text": "A GitHub Action that parses a markdown file and creates a JSON file with its content.",
                     "tags": [
                       "Shell Script",
-                      "GitHub Action"
+                      "GitHub Actions",
+                      "Yaml",
+                      "CSV",
+                      "JSON"
                     ]
                   },
                   {
                     "image": {
-                      "src": "/images/taildown.png",
-                      "width": 616,
-                      "height": 320
+                      "src": "/images/logos/taildown-card.svg",
+                      "width": 350,
+                      "height": 192
                     },
                     "title": "Taildown - Markdown editor",
                     "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
@@ -296,16 +300,16 @@
                   },
                   {
                     "image": {
-                      "src": "/images/awesome-seo.png",
-                      "width": 616,
-                      "height": 320
+                      "src": "/images/logos/awesome-seo-card.svg",
+                      "width": 350,
+                      "height": 192
                     },
                     "title": "Awesome SEO",
                     "text": "Free list of projects, articles, and tools related to SEO.",
                     "link": "/projects/awesome-seo",
                     "tags": [
                       "SEO",
-                      "Awesome List",
+                      "Awesome list",
                       "GitHub"
                     ]
                   }

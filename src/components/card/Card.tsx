@@ -24,12 +24,12 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
     <div className={`flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow ${className}`}>
       <div className="relative h-48">
         {link ? (
-          <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target={target(link)}>
+          <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75 cursor-pointer" target={target(link)}>
             <Image
               src={image.src}
               alt={image.alt}
               fill
-              className='object-contain'
+              className='object-contain hover:scale-105 hover:opacity-90 transition'
             />
           </a>
         ) : (

@@ -23,12 +23,23 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
   return (
     <div className={`flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow ${className}`}>
       <div className="relative h-48">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          fill
-          className='object-contain'
-        />
+        {link ? (
+          <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target={target(link)}>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className='object-contain'
+            />
+          </a>
+        ) : (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            layout='fill'
+            objectFit='cover'
+          />
+        )}
       </div>
       <div className="flex flex-col px-6 pt-6 pb-8 border-t border-gray-200 dark:border-slate-600 grow dark:bg-slate-800">
         <div className="flex items-center my-2">

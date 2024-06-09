@@ -153,6 +153,55 @@
                       "Awesome list",
                       "GitHub"
                     ]
+                  },
+                  {
+                    "image": {
+                      "src": "/images/logos/parallel-park-card.svg",
+                      "width": 350,
+                      "height": 192
+                    },
+                    "title": "Pure CSS Parallel Park",
+                    "text": "A Pure CSS experiment to simulate a car parking in a parallel parking spot.",
+                    "link": "/projects/pure-css-parallel-park",
+                    "tags": [
+                      "Experiment",
+                      "CSS",
+                      "Animation",
+                      "Pure CSS",
+                      "SASS"
+                    ]
+                  },
+                  {
+                    "image": {
+                      "src": "/images/logos/infinite-chocolate-bar-card.svg",
+                      "width": 350,
+                      "height": 192
+                    },
+                    "title": "Pure CSS Infinite Chocolate Bar",
+                    "text": "The famous trick of the infinite chocolate bar, but in CSS.",
+                    "link": "/projects/infinite-chocolate-bar",
+                    "tags": [
+                      "Experiment",
+                      "CSS",
+                      "Animation",
+                      "Pure CSS",
+                      "SASS"
+                    ]
+                  },
+                  {
+                    "image": {
+                      "src": "/images/logos/miniapps-card.png",
+                      "width": 350,
+                      "height": 192
+                    },
+                    "title": "MiniApps",
+                    "text": "A work in progress collection of mini applications built with React and Tailwind CSS.",
+                    "link": "/projects/miniapps",
+                    "tags": [
+                      "Alpine.js",
+                      "Tailwind CSS",
+                      "MiniApps"
+                    ]
                   }
                 ]
               }

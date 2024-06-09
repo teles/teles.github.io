@@ -30,6 +30,21 @@ const paths: Path[] = [
     route: 'projects',
     slugs: 'taildown',
     path: '/src/content/projects/taildown.mdx'
+  },
+  {
+    route: "projects",
+    slugs: "pure-css-parallel-park",
+    path: "/src/content/projects/parallel-park.mdx"
+  },
+  {
+    route: "projects",
+    slugs: "miniapps",
+    path: "/src/content/projects/miniapps.mdx"
+  },
+  {
+    route: "projects",
+    slugs: "infinite-chocolate-bar",
+    path: "/src/content/projects/infinite-chocolate-bar.mdx"
   }
 ]
 

@@ -465,7 +465,7 @@
             {
               "type": "Prose",
               "props": {
-                "text": "If you are interested in working with me, feel free to contact me."
+                "text": "If you are interested in working with me, feel free to [reach me out](https://www.linkedin.com/in/telesdev/)."
               }
             }
           ]
@@ -483,7 +483,7 @@
             {
               "type": "IconsBox",
               "props": {
-                "title": "Social Links",
+                "title": "Find me on these platforms",
                 "icons": [
                   {
                     "name": "GitHub",

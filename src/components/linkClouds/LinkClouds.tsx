@@ -32,7 +32,7 @@ const LinkClouds: React.FC<LinkCloudsProps> = ({ logo, text, linkColumns }) => {
                     <ul>
                         {links.links.map((link, innerIdex) => (
                             <li key={innerIdex} className='mb-2'>
-                                <a href={link.url} target='_blank' className='dark:text-white dark:border-white border-b text-pinkish-500 hover:text-pinkish-600 border-pinkish-500 hover:border-pinkish-600 pb-1 transition'>{link.title}</a>
+                                <a href={link.url} target='_blank' className='dark:text-white dark:border-white border-b text-primary-500 hover:text-primary-600 border-primary-500 hover:border-primary-600 pb-1 transition'>{link.title}</a>
                             </li>
                         ))}
                     </ul>

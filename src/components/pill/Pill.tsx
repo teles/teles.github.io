@@ -17,7 +17,7 @@ const Pill: React.FC<PillProps> = ({ label, icon, level }) => {
         <span className='ml-auto'>
         {
           Array.from({ length: 5 }).map((_, index) => (
-            <span key={index} className={"ml-2 rounded-full h-2 w-2 inline-block " + (index < level ? 'bg-pinkish-500' : 'bg-gray-200')}></span>
+            <span key={index} className={"ml-2 rounded-full h-2 w-2 inline-block " + (index < level ? 'bg-primary-500' : 'bg-gray-200')}></span>
           ))
         }
         </span>

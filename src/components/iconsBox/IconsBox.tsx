@@ -17,7 +17,7 @@ const IconsBox: React.FC<IconBoxProps> = ({ icons, title }) => {
       <ul className='flex gap-2 mb-2'>
         {icons.map((icon, index) => (
           <li key={index}>
-            <a href={icon.link} target="_blank" className='text-pinkish-500 hover:text-pinkish-600 transition'>
+            <a href={icon.link} target="_blank" className='text-primary-500 hover:text-primary-600 transition'>
               <TextToIcon icon={icon.name} className='text-2xl' />
             </a>
           </li>

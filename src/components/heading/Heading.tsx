@@ -25,7 +25,7 @@ const Heading: React.FC<HeadingProps> = ({ level, text, link, size }) => {
     <div className="flex items-center leading-6 dark:text-white">
       <HeadingTag className={'mr-2 '+ headingByLevel[size - 1]}>{text}</HeadingTag>
       {link && (
-        <a href={link.href} className="text-pinkish-500 hover:text-pinkish-600 transition ml-auto">
+        <a href={link.href} className="text-primary-500 hover:text-primary-600 transition ml-auto">
           {link.text}
         </a>
       )}

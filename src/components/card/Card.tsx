@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
     <div className={`flex flex-col rounded-xl border-gray-200 dark:border-slate-600 dark:bg-slate-900 border overflow-hidden shadow-md grow ${className}`}>
       <div className="relative h-48">
         {link ? (
-          <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75 cursor-pointer" target={target(link)}>
+          <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-75 cursor-pointer" target={target(link)}>
             <Image
               src={image.src}
               alt={image.alt}
@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, icon, text, tags, l
           {icon && <div className="mr-2">{icon}</div>}
           <h2 className="font-bold text-xl dark:text-white">
             {link ? (
-              <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-pinkish-500 focus:ring-opacity-75" target={target(link)}>
+              <a href={link} className="hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-75" target={target(link)}>
                 {title}
               </a>
             ) : (

@@ -12,16 +12,24 @@ type PillListProps = {
 
 const PillList: React.FC<PillListProps> = ({ pills }) => {
   return (
-    <div className='w-full columns-1 sm:columns-2 md:columns-3 lg:columns-4'>
+    <ul className='w-full columns-4 min-w-[900px]' itemScope itemType="https://schema.org/ItemList">
       {pills.map((item, index) => {
         if (typeof item === 'string') {
-          return <Pill key={index} label={item} />
+          return (
+            <li key={index} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Pill  label={item} />
+            </li>
+          )
         } else {
           const { pill, level } = item
-          return <Pill key={index} label={pill} level={level} />
+          return (
+            <li key={index} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+              <Pill key={index} label={pill} level={level} />
+            </li>
+          )
         }
       })}
-    </div>
+    </ul>
   )
 }
 

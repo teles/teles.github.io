@@ -218,22 +218,6 @@
                 "cards": [
                   {
                     "image": {
-                      "src": "/images/personal.png",
-                      "width": 616,
-                      "height": 320,
-                      "alt": "Teles' avatar drawn by github.com/teles"
-                    },
-                    "title": "Personal Website",
-                    "link": "/projects/personal-website",
-                    "text": "My personal website, portfolio, and blog. Built with Next.js, Tailwind CSS, and MDX.",
-                    "tags": [
-                      "React",
-                      "Next.js",
-                      "Tailwind CSS"
-                    ]
-                  },
-                  {
-                    "image": {
                       "src": "/images/logos/holysheets-card.svg",
                       "width": 350,
                       "height": 192,
@@ -247,6 +231,23 @@
                       "NPM Library",
                       "Backend",
                       "Google Sheets"
+                    ]
+                  },
+                  {
+                    "image": {
+                      "src": "/images/logos/resumin-card.svg",
+                      "width": 616,
+                      "height": 320,
+                      "alt": "Resumin log"
+                    },
+                    "title": "Resumin - Resume Builder",
+                    "link": "/projects/resumin",
+                    "text": "A Next.js template to create your resume with ease.",
+                    "tags": [
+                      "React",
+                      "Next.js",
+                      "Resume",
+                      "NPM"
                     ]
                   },
                   {

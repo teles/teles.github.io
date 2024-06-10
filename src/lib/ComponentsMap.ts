@@ -8,7 +8,6 @@ const ComponentsMap: Record<string, React.ElementType> = {
   Card: React.lazy(() => import('../components/card/Card')),
   Cards: React.lazy(() => import('../components/cards/Cards')),
   FlatList: React.lazy(() => import('../components/flatList/FlatList')),
-  Formulary: React.lazy(() => import('../components/form/Formulary')),
   Heading: React.lazy(() => import('../components/heading/Heading')),
   Hero: React.lazy(() => import('../components/hero/Hero')),
   IconsBox: React.lazy(() => import('../components/iconsBox/IconsBox')),

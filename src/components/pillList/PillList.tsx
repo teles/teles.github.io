@@ -8,11 +8,12 @@ interface PillWithLevel {
 
 type PillListProps = {
   pills: PillWithLevel[] | string[];
+  wrap?: boolean;
 }
 
-const PillList: React.FC<PillListProps> = ({ pills }) => {
+const PillList: React.FC<PillListProps> = ({ pills, wrap = false }) => {
   return (
-    <ul className='w-full columns-4 min-w-[900px]' itemScope itemType="https://schema.org/ItemList">
+    <ul className={`w-full ${wrap ? 'columns-1 md:columns-2 lg:columns-3' : 'min-w-[900px] columns-4'}`} itemScope itemType="https://schema.org/ItemList">
       {pills.map((item, index) => {
         if (typeof item === 'string') {
           return (

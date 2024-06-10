@@ -76,13 +76,13 @@
                   },
                   {
                     "image": {
-                      "src": "/images/logos/resumin-card.svg",
+                      "src": "/images/logos/resufolio-card.svg",
                       "width": 616,
                       "height": 320,
-                      "alt": "Resumin log"
+                      "alt": "Resufolio"
                     },
-                    "title": "Resumin - Resume Builder",
-                    "link": "/projects/resumin",
+                    "title": "Resufolio - Next template for resume and portfolio",
+                    "link": "/projects/resufolio",
                     "text": "A Next.js template to create your resume with ease.",
                     "tags": [
                       "React",

@@ -64,7 +64,7 @@
                       "height": 192,
                       "alt": "Holysheets logo"
                     },
-                    "title": "HolySheets!",
+                    "title": "Holysheets!",
                     "link": "/projects/holysheets",
                     "text": "A Google Sheets add-on that helps you manage your spreadsheets with ease.",
                     "tags": [
@@ -84,12 +84,7 @@
                     "title": "Resufolio - Next template for resume and portfolio",
                     "link": "/projects/resufolio",
                     "text": "A Next.js template to create your resume with ease.",
-                    "tags": [
-                      "React",
-                      "Next.js",
-                      "Resume",
-                      "NPM"
-                    ]
+                    "tags": ["React", "Next.js", "Resume", "NPM"]
                   },
                   {
                     "image": {
@@ -100,12 +95,7 @@
                     "title": "Array Mixer",
                     "link": "/projects/array-mixer",
                     "text": "A simple and lightweight library to shuffle arrays in JavaScript.",
-                    "tags": [
-                      "TypeScript",
-                      "Jest",
-                      "Node.js",
-                      "NPM"
-                    ]
+                    "tags": ["TypeScript", "Jest", "Node.js", "NPM"]
                   },
                   {
                     "image": {
@@ -133,12 +123,7 @@
                     "title": "Taildown - Markdown editor",
                     "text": "A simple and lightweight Markdown editor built with React and Tailwind CSS.",
                     "link": "/projects/taildown",
-                    "tags": [
-                      "Tailwind CSS",
-                      "Markdown",
-                      "React",
-                      "TypeScript"
-                    ]
+                    "tags": ["Tailwind CSS", "Markdown", "React", "TypeScript"]
                   },
                   {
                     "image": {
@@ -149,11 +134,7 @@
                     "title": "Awesome SEO",
                     "text": "Free list of projects, articles, and tools related to SEO.",
                     "link": "/projects/awesome-seo",
-                    "tags": [
-                      "SEO",
-                      "Awesome list",
-                      "GitHub"
-                    ]
+                    "tags": ["SEO", "Awesome list", "GitHub"]
                   },
                   {
                     "image": {
@@ -198,11 +179,7 @@
                     "title": "MiniApps",
                     "text": "A work in progress collection of mini applications built with React and Tailwind CSS.",
                     "link": "/projects/miniapps",
-                    "tags": [
-                      "Alpine.js",
-                      "Tailwind CSS",
-                      "MiniApps"
-                    ]
+                    "tags": ["Alpine.js", "Tailwind CSS", "MiniApps"]
                   }
                 ]
               }
